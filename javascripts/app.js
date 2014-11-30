@@ -53,4 +53,9 @@ webApp.config(['$routeProvider', function ($routeProvider) {
     controller  : 'showController'
   })
 
+  .when('/category', {
+    templateUrl : 'templates/category.html',
+    controller  : 'categoryController'
+  })
+
 }]);
