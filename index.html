@@ -13,12 +13,15 @@
   <title>首页</title>
   <link rel="stylesheet" href="stylesheets/vendor/angular-animate.css">
   <link rel="stylesheet" href="stylesheets/vendor/font-awesome.css">
+  <link rel="stylesheet" href="stylesheets/vendor/idangerous.swiper.css">
   <link rel="stylesheet" href="stylesheets/style.css">
   <link rel="stylesheet" href="stylesheets/show.css">
+  <link rel="stylesheet" href="stylesheets/home.css">
   <script type="text/javascript" src="javascripts/vendor/zepto.js"></script>
   <script type="text/javascript" src="javascripts/vendor/angular.js"></script>
   <script type="text/javascript" src="javascripts/vendor/angular-route.js"></script>
   <script type="text/javascript" src="javascripts/vendor/angular-animate.js"></script>
+  <script type="text/javascript" src="javascripts/vendor/idangerous.swiper.js"></script>
   <script type="text/javascript" src="javascripts/controller.js"></script>
   <script type="text/javascript" src="javascripts/app.js"></script>
   <script type="text/javascript" src="javascripts/main.js"></script>
@@ -26,82 +29,43 @@
 
 <!-- define angular controller -->
 <body id="list deal-detail">
-  <header class="navbar">
-    <div class="nav-wrap-left">
-      <a class="react back" href="javascript:history.back()"><i class="text-icon icon-back"></i></a>
-    </div>
-    <h1 class="nav-header"></h1>
-    <div class="nav-wrap-right">
-      <a class="react nav-dropdown-btn">
-        <span class="nav-btn">
-          <i class="text-icon">≋</i>导航
-        </span>
-      </a>
-    </div>
-    <div id="nav-dropdown" class="nav-dropdown">
-      <ul>
-        <li>
-          <a class="react" gaevent="imt/hd/index" href="/">
-            <i class="text-icon">⟰</i>
-            <space></space>首页
-          </a>
-        </li>
-        <li>
-          <a class="react" gaevent="imt/hd/account" href="/account/">
-            <i class="text-icon">⍥</i>
-            <space></space>我的
-          </a>
-        </li>
-        <li>
-          <a class="react" gaevent="imt/hd/search" href="/s/">
-            <i class="text-icon">⌕</i>
-            <space></space>搜索
-          </a>
-        </li>
-      </ul>
-    </div>
-  </header>
   <!-- angular templating -->
   <!-- this is where content will be injected -->
   <div ng-view="" class="page-view" ng-class="pageAnimationClass"></div>
-
-  <footer>
-    <div class="footer-bar">
-      <div class="pull-right">
-        <span>城市:</span>
-        <space></space>
-        <a href="#" class="btn btn-weak footer-citybtn">广州</a>
-      </div>
-      <a href="#" class="btn btn-weak">登录</a>
-      <space></space>
-      <a href="#" class="btn btn-weak">注册</a>
-    </div>
-    <div class="footer-nav">
-      <ul>
-        <li><a class="react" gaevent="imt/ft/index" href="/">首页</a></li>
-        <li><a class="react" gaevent="imt/ft/order" href="/orders/all">订单</a></li>
-        <li><a data-pos="footer" class="react" data-com="i2app" gaevent="#">客户端</a></li>
-        <li><a class="react" gaevent="imt/ft/pc" href="#">电脑版</a></li>
-        <li><a class="react" gaevent="imt/ft/help" href="#">帮助</a></li>
-      </ul>
-    </div>
-    <div class="footer-links">友情链接：
-      <a target="_blank" href="#">家园网</a>
-    </div>
-    <div class="footer-copyright">
-      <div class="hr"></div>
-      <span class="footer-copyright-text">©2014 家园网
-        <a href="#" target="_blank">京ICP证000000号</a>
-      </span>
-    </div>
+  
+  <footer class="navbar">
+    <ul>
+      <li>
+        <a class="react ">
+          <span class="nav-btn">
+            <i class="text-icon">≋</i>首页
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="react ">
+          <span class="nav-btn">
+            <i class="text-icon">≋</i>分类
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="react ">
+          <span class="nav-btn">
+            <i class="text-icon">≋</i>购物车
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="react ">
+          <span class="nav-btn">
+            <i class="text-icon">≋</i>我的
+          </span>
+        </a>
+      </li>
+    </ul>
   </footer>
-  <div class="top-btn" data-com="gotop"><a class="react"><i class="text-icon">⇧</i></a>
-  </div>
-  <div id="meituan_check">
-    <br>
-    <br>
-    <br>
-  </div>
+
 </body>
 
 </html>

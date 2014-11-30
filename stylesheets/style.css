@@ -172,6 +172,10 @@ p,h6 {
 weak,small,.color-weak {
     color:#666
 }
+
+.page-view{
+    margin-bottom: 1.01rem;
+}
 .color-strong {
     color:#2bb2a3
 }
@@ -1028,13 +1032,36 @@ ul.tab-strong {
     font-size:.8rem
 }
 .navbar {
-    height:1.01rem;
-    color:#fff;
-    background:#2bb2a3;
-    border-bottom:1px solid #21897d;
-    display:-webkit-box;
-    display:-ms-flexbox;
-    position:relative
+    height: 1.01rem;
+    color: #fff;
+    background: #2bb2a3;
+    border-top: 1px solid #21897d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+.navbar ul {
+    width: 100%;
+    height: 100%;
+}
+.navbar li {
+    list-style: none outside none;
+    float: left;
+    position: relative;
+    z-index: 9998;
+    color: #FFFFFF;
+    display: inline-block;
+    height: 100%;
+    line-height: 16px;
+    width: 25%;
+    text-align: center;
+}
+
+.navbar li a {
+    padding: 5% 0;
+    height: 80%;
 }
 .navbar .nav-wrap-left {
     height:1.01rem;
@@ -1091,6 +1118,9 @@ ul.tab-strong {
 #header_qq .qqbrand {
     display:block
 }
+footer {
+    z-index: 1000000;
+}
 .navbar .nav-city {
     line-height:1;
     display:inline-block;
@@ -1143,74 +1173,6 @@ ul.tab-strong {
 }
 .nav-dropdown .text-icon {
     font-size:.34rem
-}
-footer {
-    padding:.3rem .2rem .4rem;
-    background-color:#f0efed
-}
-.footer-bar {
-    font-size:.28rem;
-    margin-bottom:.4rem
-}
-.footer-nav {
-    margin-bottom:.18rem
-}
-.footer-nav ul {
-    margin:0;
-    padding:.18rem 0;
-    font-size:.24rem;
-    white-space:nowrap;
-    display:-webkit-box;
-    display:-ms-flexbox
-}
-.footer-nav li {
-    -webkit-box-flex:1;
-    -ms-flex:1;
-    -moz-box-flex:1;
-    border-right:.02rem solid #666;
-    text-align:center
-}
-.footer-nav li>a {
-    color:#2bb2a3
-}
-.footer-nav li:last-child {
-    border-right:0
-}
-.footer-links {
-    font-size:.24rem;
-    margin:.3rem .2rem;
-    text-align:center
-}
-.footer-links a+a {
-    padding-left:.5rem
-}
-.footer-copyright {
-    font-size:.22rem;
-    text-align:center;
-    position:relative
-}
-.footer-copyright .hr {
-    display:block;
-    content:"";
-    width:100%;
-    position:absolute;
-    top:50%;
-    border-top:1px solid #999
-}
-.footer-copyright a {
-    text-decoration:none;
-    color:#999
-}
-.footer-copyright {
-    color:#999
-}
-.footer-copyright-text {
-    position:relative;
-    padding:0 .3rem;
-    background-color:#f0efed
-}
-.footer-citybtn {
-    width:1.8rem
 }
 .dealcard,.cinemacard {
     position:relative;

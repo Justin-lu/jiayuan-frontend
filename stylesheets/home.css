@@ -1,0 +1,957 @@
+.clear {
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+
+.daolist {
+  margin-bottom: 0;
+  padding: 20px 0;
+  border-bottom: solid 1px #d6d6d6;
+  background: #fff;
+}
+
+.daolist-v {
+  margin: 0 auto;
+  width: 310px;
+  background: #fff;
+}
+
+.daolist a {
+  float: left;
+  overflow: hidden;
+  margin-right: 10px;
+  width: 69px;
+  text-align: center;
+}
+
+.daolist a .pic {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-left: 0;
+  width: 69px;
+  height: 50px;
+  text-align: center;
+}
+
+.daolist a .pic img {
+  position: absolute;
+  left: 0;
+  width: auto;
+  height: 100%;
+}
+
+.daolist a .tt {
+  display: block;
+  padding: 7px 0 0 0;
+  color: #494949;
+  font-size: 12px;
+}
+
+.rukou {
+  overflow: hidden;
+  width: 100%;
+  border-bottom: solid 1px #e4e4e4;
+}
+
+.rukou a {
+  float: left;
+  width: 50%;
+}
+
+.rukou a img {
+  width: 100%;
+}
+
+.cat-title {
+  margin: 0 0 .3em 0;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.cat-title a {
+  padding-left: 1.2em;
+  height: 35em;
+  color: #666;
+  line-height: 35px;
+}
+
+.cat-title a span {
+  float: left;
+}
+
+.cat-title a .tt {
+  padding-top: 2px;
+  padding-right: 7px;
+  padding-left: 0;
+  font-weight: bold;
+}
+
+.cat-title a .prev {
+  margin-top: 14px;
+  width: 1.7em;
+  height: .8em;
+  background: url("/images/new/icon_prev.png") no-repeat left center;
+  background-size: contain;
+  line-height: 1em;
+  -webkit-background-size: contain;
+}
+
+.pro_inx_list {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: .7em;
+  width: 100%;
+  height: 125px;
+}
+
+.pro_inx_list a {
+  display: block;
+  background: #fff;
+}
+
+.pro_inx_list a .tc {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-right: solid 1px #d6d6d6;
+  border-bottom: solid 1px #d6d6d6;
+}
+
+.pro_inx_list a .tc .new {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 100;
+  display: block;
+  width: 24px;
+  height: 23px;
+  background: url("/images/new/icon_new.png") no-repeat;
+  background-size: contain;
+  -webkit-background-size: contain;
+}
+
+.pro_inx_list a .tc .best {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 100;
+  display: block;
+  width: 24px;
+  height: 23px;
+  background: url("/images/new/icon_best.png") no-repeat;
+  background-size: contain;
+  -webkit-background-size: contain;
+}
+
+.pro_inx_list a .tc .pic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 60%;
+  height: 100%;
+  text-align: right;
+}
+
+.pro_inx_list a .tc .pic img {
+  width: auto;
+  height: 100%;
+}
+
+.pro_inx_list a .tc .tls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 80%;
+  color: #ff4d0f;
+  font-weight: bold;
+}
+
+.pro_inx_list a .tc .desc {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  width: 40%;
+  color: #858585;
+  font-size: 9px;
+  line-height: 1.3em;
+}
+
+.pro_inx_list a .tc .price {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: 60%;
+  color: #ff4d0f;
+  font-size: 20px;
+}
+
+.pro_inx_list a .tc .price label {
+  padding-right: 5px;
+  color: #555;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.pro_inx_list a .tc-big .tls {
+  font-size: 14px;
+}
+
+.pro_inx_list a .tc-small .tls {
+  top: 7px;
+  left: 7px;
+  font-size: 10px;
+}
+
+.pro_inx_list a .tc-small .desc {
+  top: 22px;
+  left: 7px;
+  overflow: hidden;
+  width: 50%;
+  font-size: 8px;
+}
+
+.pro_inx_list .goods01 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+}
+
+.pro_inx_list .goods02 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38%;
+  height: 48%;
+}
+
+.pro_inx_list .goods03 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 38%;
+  height: 48%;
+}
+
+.ztg-list {
+  width: 100%;
+}
+
+.ztg-list ul li {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 50%;
+  height: 60px;
+  border-bottom: solid 1px #e9e9e9;
+  background: #fff;
+}
+
+.ztg-list ul li .cont {
+  display: block;
+  height: 100%;
+  border-right: solid 1px #e9e9e9;
+}
+
+.ztg-list ul li .cont .dao {
+  padding: 10px 0 0 7px;
+  color: #686868;
+}
+
+.ztg-list ul li .cont .dao .tls {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.ztg-list ul li .cont .dao .link {
+  color: #969696;
+  font-size: 9px;
+}
+
+.ztg-list ul li .cont .pic {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  overflow: hidden;
+  width: auto;
+  height: 50px;
+}
+
+.ztg-list ul li .cont .pic img {
+  height: 100%;
+}
+
+.alt-msg-info-bg-easy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90009;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.alt-msg-info-easy {
+  position: fixed;
+  top: 25px;
+  left: 0;
+  z-index: 99901;
+  visibility: hidden;
+  width: 80%;
+  font-size: 14px;
+}
+
+.alt-msg-info-easy img {
+  width: 100%;
+}
+
+.rukou {
+  overflow: hidden;
+  width: 100%;
+  border-bottom: solid 1px #e4e4e4;
+}
+
+.rukou a {
+  float: left;
+  width: 50%;
+}
+
+.rukou a img {
+  width: 100%;
+}
+
+.tejia {
+  padding-top: 2em;
+  padding-bottom: 1em;
+  background: #fff;
+}
+
+.tejia .tla .pic {
+  height: 34px;
+}
+
+.tejia .tla .more {
+  float: right;
+  width: 35%;
+}
+
+.tejia .tla .more img {
+  width: 100%;
+}
+
+.tejia {
+  border-bottom: solid 1px #ddd;
+}
+
+.tejia .list_tejia {
+  margin-top: 1em;
+  padding-top: 10px;
+  border-top: solid 1px #e4e4e4;
+}
+
+.list_tejia li {
+  float: left;
+  overflow: hidden;
+  width: 50%;
+  background: #fff;
+}
+
+.list_tejia li .con {
+  width: 100%;
+}
+
+.list_tejia li .pic {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.list_tejia li .pic img {
+  width: 100%;
+  height: auto;
+}
+
+.list_tejia li .pic .huodong_val {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 3px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background: #faf10c;
+  font-size: 11px;
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.list_tejia li .pic .huodong_val span {
+  padding-left: 3px;
+  color: #f00;
+}
+
+.list_tejia li .tt {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.list_tejia li .tt .tl {
+  display: block;
+  overflow: hidden;
+  overflow: hidden;
+  padding: 7px 0 6px 0;
+  height: 1em;
+  color: #7d7d7d;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.list_tejia li .tt .tl a {
+  color: #7d7d7d;
+}
+
+.list_tejia li .tt .tl a:visited {
+  color: #7d7d7d;
+}
+
+.list_tejia li .tt .tl a:hover {
+  color: #7d7d7d;
+}
+
+.list_tejia li .tt .tl span {
+  padding: 0 2px;
+}
+
+.list_tejia li .tt .cd {
+  padding: 0 10px 0 10px;
+  color: #858585;
+  font-size: 9px;
+}
+
+.list_tejia li .tt .cd span {
+  color: #090;
+}
+
+.list_tejia li .tt .price {
+  float: left;
+  padding: 0 0 0 1em;
+  height: 40em;
+  color: #4a4a4a;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.list_tejia li .tt .price .val {
+  padding-left: 6px;
+  color: #f60;
+  font-size: 22px;
+}
+
+.list_tejia li .tt .price_jian {
+  float: left;
+  padding: 0 15px 0 .7em;
+  height: 40em;
+  color: #b3b3b3;
+  text-decoration: line-through;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.list_tejia li .tt .price_jian .val {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+.list_tejia li .tt .desc {
+  padding: 0 0 0 20px;
+  color: #333;
+  line-height: 22px;
+}
+
+.clear {
+  clear: both;
+  width: 100%;
+  height: 0;
+}
+
+.daolist {
+  margin-bottom: 0;
+  padding: 20px 0;
+  border-bottom: solid 1px #d6d6d6;
+  background: #fff;
+}
+
+.daolist-v {
+  margin: 0 auto;
+  width: 310px;
+  background: #fff;
+}
+
+.daolist a {
+  float: left;
+  overflow: hidden;
+  margin-right: 10px;
+  width: 69px;
+  text-align: center;
+}
+
+.daolist a .pic {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-left: 0;
+  width: 69px;
+  height: 50px;
+  text-align: center;
+}
+
+.daolist a .pic img {
+  position: absolute;
+  left: 0;
+  width: auto;
+  height: 100%;
+}
+
+.daolist a .tt {
+  display: block;
+  padding: 7px 0 0 0;
+  color: #494949;
+  font-size: 12px;
+}
+
+.rukou {
+  overflow: hidden;
+  width: 100%;
+  border-bottom: solid 1px #e4e4e4;
+}
+
+.rukou a {
+  float: left;
+  width: 50%;
+}
+
+.rukou a img {
+  width: 100%;
+}
+
+.cat-title {
+  margin: 0 0 .3em 0;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.cat-title a {
+  padding-left: 1.2em;
+  height: 35em;
+  color: #666;
+  line-height: 35px;
+}
+
+.cat-title a span {
+  float: left;
+}
+
+.cat-title a .tt {
+  padding-top: 2px;
+  padding-right: 7px;
+  padding-left: 0;
+  font-weight: bold;
+}
+
+.cat-title a .prev {
+  margin-top: 14px;
+  width: 1.7em;
+  height: .8em;
+  background: url("/images/new/icon_prev.png") no-repeat left center;
+  background-size: contain;
+  line-height: 1em;
+  -webkit-background-size: contain;
+}
+
+.pro_inx_list {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: .7em;
+  width: 100%;
+  height: 125px;
+}
+
+.pro_inx_list a {
+  display: block;
+  background: #fff;
+}
+
+.pro_inx_list a .tc {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-right: solid 1px #d6d6d6;
+  border-bottom: solid 1px #d6d6d6;
+}
+
+.pro_inx_list a .tc .new {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 100;
+  display: block;
+  width: 24px;
+  height: 23px;
+  background: url("/images/new/icon_new.png") no-repeat;
+  background-size: contain;
+  -webkit-background-size: contain;
+}
+
+.pro_inx_list a .tc .best {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 100;
+  display: block;
+  width: 24px;
+  height: 23px;
+  background: url("/images/new/icon_best.png") no-repeat;
+  background-size: contain;
+  -webkit-background-size: contain;
+}
+
+.pro_inx_list a .tc .pic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 60%;
+  height: 100%;
+  text-align: right;
+}
+
+.pro_inx_list a .tc .pic img {
+  width: auto;
+  height: 100%;
+}
+
+.pro_inx_list a .tc .tls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 80%;
+  color: #ff4d0f;
+  font-weight: bold;
+}
+
+.pro_inx_list a .tc .desc {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  width: 40%;
+  color: #858585;
+  font-size: 9px;
+  line-height: 1.3em;
+}
+
+.pro_inx_list a .tc .price {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: 60%;
+  color: #ff4d0f;
+  font-size: 20px;
+}
+
+.pro_inx_list a .tc .price label {
+  padding-right: 5px;
+  color: #555;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.pro_inx_list a .tc-big .tls {
+  font-size: 14px;
+}
+
+.pro_inx_list a .tc-small .tls {
+  top: 7px;
+  left: 7px;
+  font-size: 10px;
+}
+
+.pro_inx_list a .tc-small .desc {
+  top: 22px;
+  left: 7px;
+  overflow: hidden;
+  width: 50%;
+  font-size: 8px;
+}
+
+.pro_inx_list .goods01 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+}
+
+.pro_inx_list .goods02 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38%;
+  height: 48%;
+}
+
+.pro_inx_list .goods03 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 38%;
+  height: 48%;
+}
+
+.ztg-list {
+  width: 100%;
+}
+
+.ztg-list ul li {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 50%;
+  height: 60px;
+  border-bottom: solid 1px #e9e9e9;
+  background: #fff;
+}
+
+.ztg-list ul li .cont {
+  display: block;
+  height: 100%;
+  border-right: solid 1px #e9e9e9;
+}
+
+.ztg-list ul li .cont .dao {
+  padding: 10px 0 0 7px;
+  color: #686868;
+}
+
+.ztg-list ul li .cont .dao .tls {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.ztg-list ul li .cont .dao .link {
+  color: #969696;
+  font-size: 9px;
+}
+
+.ztg-list ul li .cont .pic {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  overflow: hidden;
+  width: auto;
+  height: 50px;
+}
+
+.ztg-list ul li .cont .pic img {
+  height: 100%;
+}
+
+.alt-msg-info-bg-easy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90009;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.alt-msg-info-easy {
+  position: fixed;
+  top: 25px;
+  left: 0;
+  z-index: 99901;
+  visibility: hidden;
+  width: 80%;
+  font-size: 14px;
+}
+
+.alt-msg-info-easy img {
+  width: 100%;
+}
+
+.rukou {
+  overflow: hidden;
+  width: 100%;
+  border-bottom: solid 1px #e4e4e4;
+}
+
+.rukou a {
+  float: left;
+  width: 50%;
+}
+
+.rukou a img {
+  width: 100%;
+}
+
+.tejia {
+  padding-top: 2em;
+  padding-bottom: 1em;
+  background: #fff;
+}
+
+.tejia .tla .pic {
+  height: 34px;
+}
+
+.tejia .tla .more {
+  float: right;
+  width: 35%;
+}
+
+.tejia .tla .more img {
+  width: 100%;
+}
+
+.tejia {
+  border-bottom: solid 1px #ddd;
+}
+
+.tejia .list_tejia {
+  margin-top: 1em;
+  padding-top: 10px;
+  border-top: solid 1px #e4e4e4;
+}
+
+.list_tejia li {
+  float: left;
+  overflow: hidden;
+  width: 50%;
+  background: #fff;
+}
+
+.list_tejia li .con {
+  width: 100%;
+}
+
+.list_tejia li .pic {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.list_tejia li .pic img {
+  width: 100%;
+  height: auto;
+}
+
+.list_tejia li .pic .huodong_val {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 3px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background: #faf10c;
+  font-size: 11px;
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+
+.list_tejia li .pic .huodong_val span {
+  padding-left: 3px;
+  color: #f00;
+}
+
+.list_tejia li .tt {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.list_tejia li .tt .tl {
+  display: block;
+  overflow: hidden;
+  overflow: hidden;
+  padding: 7px 0 6px 0;
+  height: 1em;
+  color: #7d7d7d;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.list_tejia li .tt .tl a {
+  color: #7d7d7d;
+}
+
+.list_tejia li .tt .tl a:visited {
+  color: #7d7d7d;
+}
+
+.list_tejia li .tt .tl a:hover {
+  color: #7d7d7d;
+}
+
+.list_tejia li .tt .tl span {
+  padding: 0 2px;
+}
+
+.list_tejia li .tt .cd {
+  padding: 0 10px 0 10px;
+  color: #858585;
+  font-size: 9px;
+}
+
+.list_tejia li .tt .cd span {
+  color: #090;
+}
+
+.list_tejia li .tt .price {
+  float: left;
+  padding: 0 0 0 1em;
+  height: 40em;
+  color: #4a4a4a;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.list_tejia li .tt .price .val {
+  padding-left: 6px;
+  color: #f60;
+  font-size: 22px;
+}
+
+.list_tejia li .tt .price_jian {
+  float: left;
+  padding: 0 15px 0 .7em;
+  height: 40em;
+  color: #b3b3b3;
+  text-decoration: line-through;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+.list_tejia li .tt .price_jian .val {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+.list_tejia li .tt .desc {
+  padding: 0 0 0 20px;
+  color: #333;
+  line-height: 22px;
+}
