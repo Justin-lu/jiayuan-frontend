@@ -11,6 +11,8 @@ webAppControllers.controller('homeController', function($scope) {
   $scope.message = 'home page!';
   $(".nav-header").text("首页");
 
+  $(".home").addClass('active').siblings().removeClass('active');
+
   // init slider picture
   var mySwiper = $('.swiper-container').swiper({
       //Your options here:
@@ -37,13 +39,25 @@ webAppControllers.controller('homeController', function($scope) {
 webAppControllers.controller('showController', function($scope) {
   $scope.message = 'show page';
   $(".nav-header").text("团购详情");
+
 });
 
+// category
 webAppControllers.controller('categoryController', function($scope){
   $scope.message = 'show page';
   $(".nav-header").text("分类列表");
+  $(".category").addClass('active').siblings().removeClass('active');
 
   var leftSroll = new IScroll('#left_sroll', { bounceEasing: 'elastic', bounceTime: 1200 });
   var rightSroll = new IScroll('#right_sroll', { bounceEasing: 'elastic', bounceTime: 1200 });
+});
 
-})
+// cart
+webAppControllers.controller('cartController', function($scope){
+
+});
+
+// user
+webAppControllers.controller('userController',function($scope){
+
+});

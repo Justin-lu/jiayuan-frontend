@@ -58,4 +58,15 @@ webApp.config(['$routeProvider', function ($routeProvider) {
     controller  : 'categoryController'
   })
 
+  .when('/cart', {
+    templateUrl : 'templates/cart.html',
+    controller  : 'cartController'
+  })
+
+  .when('/user', {
+    templateUrl : 'templates/user.html',
+    controller  : 'userController'
+  })
+
+
 }]);

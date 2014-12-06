@@ -1782,14 +1782,6 @@ body .typeid99 {
 .merchant .dist .dist-text {
     margin-left:.12rem
 }
-@font-face {
-    font-family:cate_icon;
-    src:url(i/fonts/cate.woff?v2) format("woff"),url(i/fonts/cate.otf?v2)
-}
-@font-face {
-    font-family:base_icon;
-    src:url(i/fonts/base.woff?v7) format("woff"),url(i/fonts/base.otf?v7)
-}
 @-webkit-keyframes rotateing-anim {
     0% {
     -webkit-transform:rotate(0deg)
