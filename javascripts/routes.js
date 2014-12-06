@@ -7,6 +7,16 @@ var webApp = angular.module('webApp', [
 
 ]);
 
+
+webApp.directive('bottom_menu', function(){
+  return {
+    restrict: "E",
+    templateUrl: 'templates/bottom_menu.html',
+    replace: true
+  };
+})
+
+
 // Initialize the main module
 webApp.run(['$rootScope', '$location', '$window', function ($rootScope, $location, $window) {
 
@@ -70,3 +80,4 @@ webApp.config(['$routeProvider', function ($routeProvider) {
 
 
 }]);
+

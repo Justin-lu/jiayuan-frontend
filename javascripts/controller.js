@@ -54,10 +54,10 @@ webAppControllers.controller('categoryController', function($scope){
 
 // cart
 webAppControllers.controller('cartController', function($scope){
-
+  $(".cart").addClass('active').siblings().removeClass('active');
 });
 
 // user
 webAppControllers.controller('userController',function($scope){
-
+  $(".user").addClass('active').siblings().removeClass('active');
 });

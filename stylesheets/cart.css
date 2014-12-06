@@ -1,0 +1,531 @@
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+a:active {
+    color: #000;
+}
+
+a:hvoer {
+    color: #000;
+}
+
+.nvbt {
+    width: 20%;
+}
+
+.nvtt {
+    width: 60%;
+}
+
+.form-text {
+    width: 70%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    background: #FFFFD8
+}
+
+.content {
+    margin: 7px 0.5em;
+    padding-bottom: 44px;
+}
+
+.ipt {
+    margin-bottom: 1em;
+}
+
+.btnlist {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btnt {
+    width: 70%;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #FF6600;
+    border: 0;
+    padding: .5em 0;
+}
+
+.info-msg {
+    padding-top: 1em;
+    color: #FF6600
+}
+
+.btnitem {
+    margin-top: 1em;
+}
+
+.clear {
+    clear: both;
+}
+
+.ac-btn {
+    margin-left: 2em;
+}
+
+.ac-look a {
+    padding: 3px 16px;
+    color: #ffffff;
+    background: #339900
+}
+
+.ac-look a:visited {
+    color: #ffffff;
+}
+
+.ac-look a:hover {
+    color: #ffffff;
+}
+
+.btn-back {
+    font-size: 16px;
+    padding-left: 1em;
+}
+
+.btn_cancle {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    border: solid 1px #008000;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #008000
+}
+
+.btn_cancle:visited {
+    color: #fff;
+}
+
+.btn_cancle:hover {
+    color: #fff;
+}
+
+.mytable-cart ul li {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: solid 1px #dedede
+}
+
+.mytable-cart ul li .acnum {
+    float: left;
+    width: 9em;
+}
+
+.mytable-cart ul li .pic {
+    float: left;
+    width: 30%;
+}
+
+.mytable-cart ul li .pic .thu {
+    width: 100%;
+}
+
+.mytable-cart ul li .pic .vline {
+    width: 0px;
+    height: 0px;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+.mytable-cart ul li .tlcon {
+    float: left;
+    width: 70%;
+}
+
+.mytable-cart ul li .tlcon span {
+    padding: 0 1px;
+}
+
+.mytable-cart ul li .tlcon a {
+    color: #000
+}
+
+.mytable-cart ul li .tlcon a:hover {
+    color: #000;
+}
+
+.mytable-cart ul li .tlcon .it {
+    padding-left: 13px;
+}
+
+.mytable-cart ul li .tlcon .name {
+    height: 18px;
+    margin-bottom: 0;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000;
+}
+
+.mytable-cart ul li .tlcon .num {
+    font-size: 12px;
+    color: #666
+}
+
+.mytable-cart ul li .tlcon .ac {
+    margin-top: 2px;
+}
+
+.mytable-cart ul li .tl-group a {
+    color: #000;
+}
+
+.mytable-cart ul li .tl-group a:visited {
+    color: #000;
+}
+
+.mytable-cart ul li .tl-group a:hover {
+    color: #000;
+}
+
+.mytable-cart ul li .tl-only a {
+    color: #000;
+}
+
+.mytable-cart ul li .tl-only a:visited {
+    color: #000;
+}
+
+.mytable-cart ul li .tlcon .it .sp-baoyou {
+    font-weight: bold;
+    color: #FF6633;
+}
+
+.mytable-cart ul li.song {
+    padding-bottom: 0;
+    margin-bottom: 5px;
+}
+
+.song a {
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    background: #FFCC00;
+    color: #ff0000
+}
+
+.song a span {
+    padding-left: 3px;
+}
+
+.cart-info {
+    width: 100%;
+    height: 44px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 10%;
+    left: 0;
+    background: #fff;
+    z-index: 9999;
+    -webkit-box-shadow: 0 1px 6px #CCC;
+    box-shadow: 0 1px 6px #CCC;
+    background: #fff;
+    z-index: 10;
+}
+
+.cart-info .c-left {
+    float: left;
+    padding-left: 1em;
+    font-size: 9px;
+    line-height: 1.6em;
+}
+
+.cart-info .c-left .cnt {
+    padding-top: 7px;
+}
+
+.cart-info .c-left .em {
+    margin-right: 1em;
+}
+
+.cart-info .c-left .im {
+    color: #FF6600
+}
+
+.cart-info .c-left .num {
+    padding: 0 2px;
+}
+
+.cart-info .c-right {
+    float: right;
+    padding-right: 5px;
+    padding-top: 4px;
+    line-height: 44px;
+}
+
+.btn_buy {
+    float: right;
+    padding: 0 22px;
+    height: 36px;
+    line-height: 36px;
+    border: 0;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #FF6600;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.btn_buy:hover {
+    color: #fff;
+    background: #FF6600
+}
+
+.btn_buy:active {
+    color: #fff;
+    background: #FF6600
+}
+
+.btn_buy_en {
+    float: right;
+    padding: 0 3px;
+    height: 36px;
+    margin-left: 5px;
+    line-height: 36px;
+    border: 0;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #aaa;
+}
+
+.btn_buy_en:hover {
+    color: #fff;
+    background: #aaa
+}
+
+.btn_buy_en:active {
+    color: #fff;
+    background: #aaa
+}
+
+.pro-num-btn {
+    float: left;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    display: inline;
+    border: solid 1px #ccc;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    background: #eee;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.pro-num-btn:visited {
+    color: #fff;
+}
+
+.pro-num-btn:hover {
+    color: #000;
+    border: solid 1px #ccc;
+    background: #eee
+}
+
+.pro-num-btn:active {
+    color: #000;
+    border: solid 1px #ccc;
+    background: #FFFFD8
+}
+
+.pro-num-val {
+    float: left;
+    width: 30px;
+    height: 28px;
+    line-height: 28px;
+    border: solid 0 #ccc;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cart_none_item {
+    width: 100%;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.info-cx {
+    padding: 5px;
+    line-height: 1.5em;
+    border: dotted 1px #ccc;
+    margin-bottom: 10px;
+    background: #FFFFD8;
+}
+
+.info-cx span {
+    padding: 0 2px;
+    color: #FF6600;
+}
+
+.pro-buy-none {
+    float: left;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background: #888
+}
+
+.pro-buy-none:hover {
+    color: #fff;
+    background: #888
+}
+
+.pro-buy-none:active {
+    color: #fff;
+    background: #888
+}
+
+.pro-buy-left {
+    float: left;
+    width: 130px;
+}
+
+.pro-buy-song {
+    float: left;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background: #888
+}
+
+.pro-buy-song:hover {
+    color: #fff;
+    background: #888
+}
+
+.pro-buy-song:active {
+    color: #fff;
+    background: #888
+}
+
+.pro-buy-zengpin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ff0000;
+    color: #fff;
+    font-size: 11px;
+    line-height: 10px;
+    padding: 2px 4px;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+}
+
+.pro-buy-out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ff0000;
+    color: #fff;
+    font-size: 11px;
+    line-height: 10px;
+    padding: 2px 4px;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+}
+
+.pro-buy-tejia {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ff0000;
+    color: #fff;
+    font-size: 11px;
+    line-height: 10px;
+    padding: 2px 4px;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+}
+
+.msg-btn-song {
+    float: left;
+    width: 49%;
+    height: 36px;
+    line-height: 36px;
+    border: 0;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #FF6600;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.msg-btn-song:hover {
+    color: #fff;
+    background: #FF6600
+}
+
+.msg-btn-song:active {
+    color: #fff;
+    background: #FF6600
+}
+
+.msg-song-info {
+    padding: 5px 0 20px 0;
+    font-size: 14px;
+}
+
+.msg-btn-tojiesuan {
+    float: right;
+    width: 49%;
+    height: 36px;
+    line-height: 36px;
+    border: 0;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #CC0000;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.msg-btn-tojiesuan:hover {
+    color: #fff;
+    background: #CC0000
+}
+
+.msg-btn-tojiesuan:active {
+    color: #fff;
+    background: #CC0000
+}
