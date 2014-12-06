@@ -11,6 +11,7 @@ webAppControllers.controller('homeController', function($scope) {
   $scope.message = 'home page!';
   $(".nav-header").text("首页");
 
+  // init slider picture
   var mySwiper = $('.swiper-container').swiper({
       //Your options here:
       mode:'horizontal',
