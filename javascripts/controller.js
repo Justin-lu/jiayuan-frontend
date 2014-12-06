@@ -25,14 +25,6 @@ webAppControllers.controller('homeController', function($scope) {
       loop: true
       //etc..
   });
-  // $('.arrow-left').on('click', function(e){
-  //   e.preventDefault()
-  //   mySwiper.swipePrev()
-  // })
-  // $('.arrow-right').on('click', function(e){
-  //   e.preventDefault()
-  //   mySwiper.swipeNext()
-  // })
 });
 
 //showController
@@ -48,8 +40,14 @@ webAppControllers.controller('categoryController', function($scope){
   $(".nav-header").text("分类列表");
   $(".category").addClass('active').siblings().removeClass('active');
 
-  var leftSroll = new IScroll('#left_sroll', { bounceEasing: 'elastic', bounceTime: 1200 });
-  var rightSroll = new IScroll('#right_sroll', { bounceEasing: 'elastic', bounceTime: 1200 });
+  var leftSroll = new IScroll('#left_sroll', { tap:true, mouseWheel: true, click: true });
+  var rightSroll = new IScroll('#right_sroll', { mouseWheel: true, click: true });
+
+  $('#left_sroll ul li').on('tap', function(){
+    $(this).addClass('cur').siblings().removeClass('cur');
+    leftSroll.scrollToElement(this);
+    // filter right_scroll;
+  });
 });
 
 // cart
