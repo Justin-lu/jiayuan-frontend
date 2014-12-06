@@ -92,7 +92,7 @@
   margin-top: 14px;
   width: 1.7em;
   height: .8em;
-  background: url("/images/new/icon_prev.png") no-repeat left center;
+  /*background: url("/images/new/icon_prev.png") no-repeat left center;*/
   background-size: contain;
   line-height: 1em;
   -webkit-background-size: contain;
@@ -128,7 +128,7 @@
   display: block;
   width: 24px;
   height: 23px;
-  background: url("/images/new/icon_new.png") no-repeat;
+  /*background: url("/images/new/icon_new.png") no-repeat;*/
   background-size: contain;
   -webkit-background-size: contain;
 }
@@ -141,7 +141,7 @@
   display: block;
   width: 24px;
   height: 23px;
-  background: url("/images/new/icon_best.png") no-repeat;
+  /*background: url("/images/new/icon_best.png") no-repeat;*/
   background-size: contain;
   -webkit-background-size: contain;
 }
@@ -572,7 +572,7 @@
   margin-top: 14px;
   width: 1.7em;
   height: .8em;
-  background: url("/images/new/icon_prev.png") no-repeat left center;
+  /*background: url("/images/new/icon_prev.png") no-repeat left center;*/
   background-size: contain;
   line-height: 1em;
   -webkit-background-size: contain;
@@ -608,7 +608,7 @@
   display: block;
   width: 24px;
   height: 23px;
-  background: url("/images/new/icon_new.png") no-repeat;
+  /*background: url("/images/new/icon_new.png") no-repeat;*/
   background-size: contain;
   -webkit-background-size: contain;
 }
@@ -621,7 +621,7 @@
   display: block;
   width: 24px;
   height: 23px;
-  background: url("/images/new/icon_best.png") no-repeat;
+  /*background: url("/images/new/icon_best.png") no-repeat;*/
   background-size: contain;
   -webkit-background-size: contain;
 }

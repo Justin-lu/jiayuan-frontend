@@ -15,6 +15,8 @@ webAppControllers.controller('homeController', function($scope) {
       //Your options here:
       mode:'horizontal',
       calculateHeight: true,
+      speed:750,
+      autoplay: 3000,
       pagination: '.pagination',
       paginationClickable: true,
       loop: true
@@ -39,4 +41,8 @@ webAppControllers.controller('showController', function($scope) {
 webAppControllers.controller('categoryController', function($scope){
   $scope.message = 'show page';
   $(".nav-header").text("分类列表");
+
+  var leftSroll = new IScroll('#left_sroll', { bounceEasing: 'elastic', bounceTime: 1200 });
+  var rightSroll = new IScroll('#right_sroll', { bounceEasing: 'elastic', bounceTime: 1200 });
+
 })
