@@ -174,7 +174,7 @@ weak,small,.color-weak {
 }
 
 .page-view{
-    padding-bottom: 1.01rem;
+    margin-bottom: 52px;
 }
 .color-strong {
     color:#2bb2a3
@@ -1032,7 +1032,7 @@ ul.tab-strong {
     font-size:.8rem
 }
 .navbar {
-    height: 10%;
+    height: 52px;
     color: #fff;
     background: #2E3433;
     display: -webkit-box;
@@ -1043,6 +1043,7 @@ ul.tab-strong {
 }
 .navbar li.active {
     background: #121111;
+    color: white;
 }
 .navbar ul {
     width: 100%;
@@ -1146,7 +1147,8 @@ footer {
     display:inline-block;
     font-size:.2rem;
     line-height:1;
-    vertical-align:middle
+    vertical-align:middle;
+    color: white;
 }
 .nav-btn .text-icon {
     display:block;
