@@ -1063,7 +1063,7 @@ ul.tab-strong {
 }
 
 .navbar li a {
-    padding: 5% 0;
+    padding: 5px 0;
     height: 80%;
 }
 .navbar .nav-wrap-left {
@@ -1531,6 +1531,9 @@ footer {
 .icon-list .icon-desc {
     text-align:center;
     color:#666
+}
+body{
+    height: 100%;
 }
 body .icon-circle {
     background-color:#f82
