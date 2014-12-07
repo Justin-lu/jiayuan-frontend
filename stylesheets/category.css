@@ -224,4 +224,21 @@
   min-height: 60px;
 }
 
+.scroll {
+  overflow: hidden;
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  background-color: rgb(243, 243, 243);
+  min-height: 450px;
+}
+
+#left_sroll {
+  width: 25%;
+}
+
+#right_sroll {
+  width: 75%;
+}
+
 /*  |xGv00|cbc7e1bedde69d68216eb7ffd974d834 */

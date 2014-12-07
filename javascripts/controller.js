@@ -39,6 +39,8 @@ webAppControllers.controller('categoryController', function($scope){
   $scope.message = 'show page';
   $(".nav-header").text("分类列表");
   $(".category").addClass('active').siblings().removeClass('active');
+  var height = $(window).height() - 52 - 45 + 'px';
+  $('#left_sroll, #right_sroll').css('height', height);
 
   var leftSroll = new IScroll('#left_sroll', { tap:true, mouseWheel: true, click: true });
   var rightSroll = new IScroll('#right_sroll', { mouseWheel: true, click: true });
