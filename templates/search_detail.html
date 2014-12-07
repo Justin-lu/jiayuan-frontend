@@ -1,0 +1,1047 @@
+<div class="hd_bar fixed in" id="J_bar1">
+  <!--div class="hd_bar_back">
+  <a id="backIco" href="javascript:"></a>
+  </div-->
+  <form action="###" class="hd_search_frm hd_search_frm_focus" onsubmit="return false;" id="searchForm">
+    <input type="search" class="hd_search_txt hd_search_txt_null" id="keyWord" autocomplete="off" placeholder="搜索全部商品">
+    <a class="hd_search_clear" href="javascript:;" id="searchClearBtn">x</a>
+  </form>
+  <!--div class="hd_search_tit hide" id="resFilterTipBlock"></div-->
+  <div class="hd_me">
+    <a href="javascript:" id="searchBtn" class="WX_search_btn_blue hide">搜索</a>
+    <a href="javascript:" id="cancelBtn" class="hd_search_btn hide">取消</a>
+    <a href="javascript:" id="filterBtn" class="hd_search_btn" cg="0-1-5">筛选</a>
+  </div>
+</div>
+
+<div class="wx_wrap">
+  <div id="smartboxBlock" style="display:none;">
+    <div>
+      <div class="s_tab" dtab="s-tab" style="display:none;">
+        <a href="javascript:" ind="1" cg="1-6-1">最近搜索</a><a href="javascript:" ind="2" cg="1-6-2">热门搜索</a>
+      </div>
+      <div class="s_row" dtab="s-row" style="display:none;">
+      </div>
+      <div class="s_btn" dtab="s-btn" style="display:none;" cg="1-6-13">
+        清除搜索历史
+      </div>
+      <div class="s_tag" dtab="s-tag" style="display:none;">
+      </div>
+      <div class="s_btn" dtab="c-btn" style="display:none;" cg="1-7-1">
+        换一批
+      </div>
+      <div class="s_row" dtab="smartWrap" style="display:none;">
+      </div>
+    </div>
+  </div>
+  <div id="searchResBlock" class="">
+    <div class="sf_layer_wrap" id="filterBlock">
+      <div class="sf_layer">
+        <div class="sf_layer_title">
+          <div class="left">
+            <input type="button" class="sf_btn_gray" id="filterCBtn" value="取消">
+            <input type="button" class="s_back_btn hide" id="filterBBtn" value="&nbsp;">
+          </div>
+          <div class="tit">
+            筛选
+          </div>
+          <div class="right">
+            <input type="button" class="sf_btn_primary" id="filterSureBtn" value="确认">
+          </div>
+        </div>
+        <div class="sf_layer_sub_title hide" id="filterSelBlock">
+          <strong>已选择：</strong><span id="filterSelTips" class="words_10" style="max-width: 830px;"></span>
+        </div>
+        <div class="sf_layer_con" id="filterInner">
+          <ul class="mod_list">
+            <li data-filter="area" cg="0-8-17" class="arrow_li">
+            <div class="list_inner" cg="0-8-17">
+              <div class="big" cg="0-8-17">
+                配送至
+              </div>
+              <div class="right" cg="0-8-17">
+                山西-朔州市-怀仁县
+              </div>
+            </div>
+            </li>
+          </ul>
+          <ul class="mod_list">
+            <li data-filter="dSide" cg="0-8-16" class="check_li ">
+            <div class="list_inner" cg="0-8-16">
+              <div class="big" cg="0-8-16">
+                京东配送
+              </div>
+              <div class="right" cg="0-8-16">
+                &nbsp;
+              </div>
+            </div>
+            </li>
+          </ul>
+          <ul class="mod_list">
+            <li class="arrow_li" data-filter="category" cg="0-8-2">
+            <div class="list_inner" cg="0-8-2">
+              <div class="big" cg="0-8-2">
+                分类
+              </div>
+              <div class="right" cg="0-8-2">
+                全部分类
+              </div>
+            </div>
+            </li>
+          </ul>
+          <ul class="mod_list">
+            <li class="super_li" cg="0-8-3">
+            <div class="list_inner" cg="0-8-3">
+              <div class="big" cg="0-8-3">
+                品牌
+              </div>
+              <div class="right" cg="0-8-3">
+                <span class="words_10" cg="0-8-3" r-mark="brand" slen="undefined" style="max-width: 832px;">undefined</span>
+              </div>
+              <ul class="sub_list hide">
+                <li filter-cate="brand" class="check_li " tid="14135" tname="柒牌（SEVEN）" extid="" cname="柒牌（SEVEN）" cg="0-10-2">
+                <div class="big" cg="0-10-2">
+                  柒牌（SEVEN）
+                </div>
+                <div class="right" cg="0-10-2">
+                </div>
+                </li>
+                <li filter-cate="brand" class="check_li " tid="9424" tname="金利来（Goldlion）" extid="" cname="金利来（Goldlion）" cg="0-10-3">
+                <div class="big" cg="0-10-3">
+                  金利来（Goldlion）
+                </div>
+                <div class="right" cg="0-10-3">
+                </div>
+                </li>
+                <li filter-cate="brand" class="check_li " tid="8128" tname="皓顿（HAUTTON）" extid="" cname="皓顿（HAUTTON）" cg="0-10-4">
+                <div class="big" cg="0-10-4">
+                  皓顿（HAUTTON）
+                </div>
+                <div class="right" cg="0-10-4">
+                </div>
+                </li>
+                <li filter-cate="brand" class="check_li " tid="14118" tname="七匹狼（SEPTWOLVES）" extid="" cname="七匹狼（SEPTWOLVES）" cg="0-10-5">
+                <div class="big" cg="0-10-5">
+                  七匹狼（SEPTWOLVES）
+                </div>
+                <div class="right" cg="0-10-5">
+                </div>
+                </li>
+                <li filter-cate="brand" class="check_li " tid="11810" tname="伦威保罗（LENWEBOLO）" extid="" cname="伦威保罗（LENWEBOLO）" cg="0-10-6">
+                <div class="big" cg="0-10-6">
+                  伦威保罗（LENWEBOLO）
+                </div>
+                <div class="right" cg="0-10-6">
+                </div>
+                </li>
+                <li filter-cate="brand" class="check_li " tid="5923" tname="稻草人（MEXICAN）" extid="" cname="稻草人（MEXICAN）" cg="0-10-7">
+                <div class="big" cg="0-10-7">
+                  稻草人（MEXICAN）
+                </div>
+                <div class="right" cg="0-10-7">
+                </div>
+                </li>
+                <li filter-cate="brand" class="check_li " tid="43518" tname="蒙特布鲁斯（MANTOBRUCE）" extid="" cname="蒙特布鲁斯（MANTOBRUCE）" cg="0-10-8">
+                <div class="big" cg="0-10-8">
+                  蒙特布鲁斯（MANTOBRUCE）
+                </div>
+                <div class="right" cg="0-10-8">
+                </div>
+                </li>
+                <li filter-cate="brand" class="check_li " tid="38261" tname="哥特（Gothique）" extid="" cname="哥特（Gothique）" cg="0-10-9">
+                <div class="big" cg="0-10-9">
+                  哥特（Gothique）
+                </div>
+                <div class="right" cg="0-10-9">
+                </div>
+                </li>
+                <li filter-cate="brand" class="check_li " tid="4925" tname="宾格（BINGER）" extid="" cname="宾格（BINGER）" cg="0-10-10">
+                <div class="big" cg="0-10-10">
+                  宾格（BINGER）
+                </div>
+                <div class="right" cg="0-10-10">
+                </div>
+                </li>
+                <li class="arrow_li" data-filter="brand">
+                <div class="big">
+                  更多品牌
+                </div>
+                <div class="right">
+                </div>
+                </li>
+              </ul>
+            </div>
+            </li>
+            <li class="super_li" cg="0-8-4">
+            <div class="list_inner" cg="0-8-4">
+              <div class="big" cg="0-8-4">
+                价格
+              </div>
+              <div class="right" cg="0-8-4" r-mark="price">
+                全部价格
+              </div>
+              <ul class="sub_list hide">
+                <li filter-cate="price" class="" min="0" max="399" cname="¥0 - ¥399" cg="0-11-2">
+                <div class="big" cg="0-11-2">
+                  ¥0 - ¥399
+                </div>
+                </li>
+                <li filter-cate="price" class="" min="400" max="799" cname="¥400 - ¥799" cg="0-11-3">
+                <div class="big" cg="0-11-3">
+                  ¥400 - ¥799
+                </div>
+                </li>
+                <li filter-cate="price" class="" min="800" max="1299" cname="¥800 - ¥1299" cg="0-11-4">
+                <div class="big" cg="0-11-4">
+                  ¥800 - ¥1299
+                </div>
+                </li>
+                <li filter-cate="price" class="" min="1300" max="2099" cname="¥1300 - ¥2099" cg="0-11-5">
+                <div class="big" cg="0-11-5">
+                  ¥1300 - ¥2099
+                </div>
+                </li>
+                <li filter-cate="price" class="" min="2100" max="4099" cname="¥2100 - ¥4099" cg="0-11-6">
+                <div class="big" cg="0-11-6">
+                  ¥2100 - ¥4099
+                </div>
+                </li>
+                <li filter-cate="price" class="" min="4100" max="11299" cname="¥4100 - ¥11299" cg="0-11-7">
+                <div class="big" cg="0-11-7">
+                  ¥4100 - ¥11299
+                </div>
+                </li>
+                <li filter-cate="price" class="" min="11300" max="220099" cname="¥11300 - ¥220099" cg="0-11-8">
+                <div class="big" cg="0-11-8">
+                  ¥11300 - ¥220099
+                </div>
+                </li>
+              </ul>
+            </div>
+            </li>
+            <li class="super_li" cg="0-8-5">
+            <div class="list_inner" cg="0-8-5">
+              <div class="big" cg="0-8-5">
+                颜色
+              </div>
+              <div class="right" cg="0-8-5">
+                <span class="words_10" cg="0-8-5" r-mark="exp_color" slen="undefined" style="max-width: 832px;">undefined</span>
+              </div>
+              <ul class="sub_list hide">
+                <li class="check_li " filter-cate="ext" tid="exp_color" tname="黑色" extid="exp_color" cname="黑色" cg="0-12-2">
+                <div class="big" cg="0-12-2">
+                  黑色
+                </div>
+                <div class="right" cg="0-12-2">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="exp_color" tname="灰色" extid="exp_color" cname="灰色" cg="0-12-3">
+                <div class="big" cg="0-12-3">
+                  灰色
+                </div>
+                <div class="right" cg="0-12-3">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="exp_color" tname="白色" extid="exp_color" cname="白色" cg="0-12-4">
+                <div class="big" cg="0-12-4">
+                  白色
+                </div>
+                <div class="right" cg="0-12-4">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="exp_color" tname="红色" extid="exp_color" cname="红色" cg="0-12-5">
+                <div class="big" cg="0-12-5">
+                  红色
+                </div>
+                <div class="right" cg="0-12-5">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="exp_color" tname="玫瑰红" extid="exp_color" cname="玫瑰红" cg="0-12-6">
+                <div class="big" cg="0-12-6">
+                  玫瑰红
+                </div>
+                <div class="right" cg="0-12-6">
+                </div>
+                </li>
+                <li class="arrow_li" data-filter="exp_color">
+                <div class="big">
+                  更多颜色
+                </div>
+                <div class="right">
+                </div>
+                </li>
+              </ul>
+            </div>
+            </li>
+            <li class="super_li" cg="0-8-6">
+            <div class="list_inner" cg="0-8-6">
+              <div class="big" cg="0-8-6">
+                尺寸
+              </div>
+              <div class="right" cg="0-8-6">
+                <span class="words_10" cg="0-8-6" r-mark="exp_size" slen="undefined" style="max-width: 832px;">undefined</span>
+              </div>
+              <ul class="sub_list hide">
+                <li class="check_li " filter-cate="ext" tid="exp_size" tname="S" extid="exp_size" cname="S" cg="0-12-2">
+                <div class="big" cg="0-12-2">
+                  S
+                </div>
+                <div class="right" cg="0-12-2">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="exp_size" tname="M" extid="exp_size" cname="M" cg="0-12-3">
+                <div class="big" cg="0-12-3">
+                  M
+                </div>
+                <div class="right" cg="0-12-3">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="exp_size" tname="L" extid="exp_size" cname="L" cg="0-12-4">
+                <div class="big" cg="0-12-4">
+                  L
+                </div>
+                <div class="right" cg="0-12-4">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="exp_size" tname="10" extid="exp_size" cname="10" cg="0-12-5">
+                <div class="big" cg="0-12-5">
+                  10
+                </div>
+                <div class="right" cg="0-12-5">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="exp_size" tname="11" extid="exp_size" cname="11" cg="0-12-6">
+                <div class="big" cg="0-12-6">
+                  11
+                </div>
+                <div class="right" cg="0-12-6">
+                </div>
+                </li>
+                <li class="arrow_li" data-filter="exp_size">
+                <div class="big">
+                  更多尺寸
+                </div>
+                <div class="right">
+                </div>
+                </li>
+              </ul>
+            </div>
+            </li>
+            <li class="super_li" cg="0-8-7">
+            <div class="list_inner" cg="0-8-7">
+              <div class="big" cg="0-8-7">
+                款式
+              </div>
+              <div class="right" cg="0-8-7">
+                <span class="words_10" cg="0-8-7" r-mark="688" slen="undefined" style="max-width: 832px;">undefined</span>
+              </div>
+              <ul class="sub_list hide">
+                <li class="check_li " filter-cate="ext" tid="12858" tname="手提包" extid="688" cname="手提包" cg="0-12-2">
+                <div class="big" cg="0-12-2">
+                  手提包
+                </div>
+                <div class="right" cg="0-12-2">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="24353" tname="斜挎包" extid="688" cname="斜挎包" cg="0-12-3">
+                <div class="big" cg="0-12-3">
+                  斜挎包
+                </div>
+                <div class="right" cg="0-12-3">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="8926" tname="单肩包" extid="688" cname="单肩包" cg="0-12-4">
+                <div class="big" cg="0-12-4">
+                  单肩包
+                </div>
+                <div class="right" cg="0-12-4">
+                </div>
+                </li>
+              </ul>
+            </div>
+            </li>
+            <li class="super_li" cg="0-8-8">
+            <div class="list_inner" cg="0-8-8">
+              <div class="big" cg="0-8-8">
+                材质
+              </div>
+              <div class="right" cg="0-8-8">
+                <span class="words_10" cg="0-8-8" r-mark="705" slen="undefined" style="max-width: 832px;">undefined</span>
+              </div>
+              <ul class="sub_list hide">
+                <li class="check_li " filter-cate="ext" tid="24360" tname="牛皮" extid="705" cname="牛皮" cg="0-12-2">
+                <div class="big" cg="0-12-2">
+                  牛皮
+                </div>
+                <div class="right" cg="0-12-2">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="11415" tname="羊皮" extid="705" cname="羊皮" cg="0-12-3">
+                <div class="big" cg="0-12-3">
+                  羊皮
+                </div>
+                <div class="right" cg="0-12-3">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="105988" tname="鳄鱼皮" extid="705" cname="鳄鱼皮" cg="0-12-4">
+                <div class="big" cg="0-12-4">
+                  鳄鱼皮
+                </div>
+                <div class="right" cg="0-12-4">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="79074" tname="配皮" extid="705" cname="配皮" cg="0-12-5">
+                <div class="big" cg="0-12-5">
+                  配皮
+                </div>
+                <div class="right" cg="0-12-5">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="76954" tname="帆布" extid="705" cname="帆布" cg="0-12-6">
+                <div class="big" cg="0-12-6">
+                  帆布
+                </div>
+                <div class="right" cg="0-12-6">
+                </div>
+                </li>
+                <li class="arrow_li" data-filter="705">
+                <div class="big">
+                  更多材质
+                </div>
+                <div class="right">
+                </div>
+                </li>
+              </ul>
+            </div>
+            </li>
+            <li class="super_li" cg="0-8-9">
+            <div class="list_inner" cg="0-8-9">
+              <div class="big" cg="0-8-9">
+                内部结构
+              </div>
+              <div class="right" cg="0-8-9">
+                <span class="words_10" cg="0-8-9" r-mark="418" slen="undefined" style="max-width: 804px;">undefined</span>
+              </div>
+              <ul class="sub_list hide">
+                <li class="check_li " filter-cate="ext" tid="203257" tname="拉链暗袋" extid="418" cname="拉链暗袋" cg="0-12-2">
+                <div class="big" cg="0-12-2">
+                  拉链暗袋
+                </div>
+                <div class="right" cg="0-12-2">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="203258" tname="手机袋" extid="418" cname="手机袋" cg="0-12-3">
+                <div class="big" cg="0-12-3">
+                  手机袋
+                </div>
+                <div class="right" cg="0-12-3">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="203259" tname="证件袋" extid="418" cname="证件袋" cg="0-12-4">
+                <div class="big" cg="0-12-4">
+                  证件袋
+                </div>
+                <div class="right" cg="0-12-4">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="203260" tname="夹层拉链袋" extid="418" cname="夹层拉链袋" cg="0-12-5">
+                <div class="big" cg="0-12-5">
+                  夹层拉链袋
+                </div>
+                <div class="right" cg="0-12-5">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="203261" tname="电脑插袋" extid="418" cname="电脑插袋" cg="0-12-6">
+                <div class="big" cg="0-12-6">
+                  电脑插袋
+                </div>
+                <div class="right" cg="0-12-6">
+                </div>
+                </li>
+                <li class="arrow_li" data-filter="418">
+                <div class="big">
+                  更多内部结构
+                </div>
+                <div class="right">
+                </div>
+                </li>
+              </ul>
+            </div>
+            </li>
+            <li class="super_li" cg="0-8-10">
+            <div class="list_inner" cg="0-8-10">
+              <div class="big" cg="0-8-10">
+                开袋方式
+              </div>
+              <div class="right" cg="0-8-10">
+                <span class="words_10" cg="0-8-10" r-mark="13997" slen="undefined" style="max-width: 804px;">undefined</span>
+              </div>
+              <ul class="sub_list hide">
+                <li class="check_li " filter-cate="ext" tid="200525" tname="包盖式" extid="13997" cname="包盖式" cg="0-12-2">
+                <div class="big" cg="0-12-2">
+                  包盖式
+                </div>
+                <div class="right" cg="0-12-2">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="106077" tname="拉链" extid="13997" cname="拉链" cg="0-12-3">
+                <div class="big" cg="0-12-3">
+                  拉链
+                </div>
+                <div class="right" cg="0-12-3">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="200528" tname="拉链搭扣" extid="13997" cname="拉链搭扣" cg="0-12-4">
+                <div class="big" cg="0-12-4">
+                  拉链搭扣
+                </div>
+                <div class="right" cg="0-12-4">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="105785" tname="搭扣" extid="13997" cname="搭扣" cg="0-12-5">
+                <div class="big" cg="0-12-5">
+                  搭扣
+                </div>
+                <div class="right" cg="0-12-5">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="105782" tname="魔术贴" extid="13997" cname="魔术贴" cg="0-12-6">
+                <div class="big" cg="0-12-6">
+                  魔术贴
+                </div>
+                <div class="right" cg="0-12-6">
+                </div>
+                </li>
+                <li class="arrow_li" data-filter="13997">
+                <div class="big">
+                  更多开袋方式
+                </div>
+                <div class="right">
+                </div>
+                </li>
+              </ul>
+            </div>
+            </li>
+            <li class="super_li" cg="0-8-11">
+            <div class="list_inner" cg="0-8-11">
+              <div class="big" cg="0-8-11">
+                大家说
+              </div>
+              <div class="right" cg="0-8-11">
+                <span class="words_10" cg="0-8-11" r-mark="536870917" slen="undefined" style="max-width: 818px;">undefined</span>
+              </div>
+              <ul class="sub_list hide">
+                <li class="check_li " filter-cate="ext" tid="536895950" tname="包包不错" extid="536870917" cname="包包不错" cg="0-12-2">
+                <div class="big" cg="0-12-2">
+                  包包不错
+                </div>
+                <div class="right" cg="0-12-2">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="536895285" tname="外观不错" extid="536870917" cname="外观不错" cg="0-12-3">
+                <div class="big" cg="0-12-3">
+                  外观不错
+                </div>
+                <div class="right" cg="0-12-3">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="536895407" tname="手感不错" extid="536870917" cname="手感不错" cg="0-12-4">
+                <div class="big" cg="0-12-4">
+                  手感不错
+                </div>
+                <div class="right" cg="0-12-4">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="536896734" tname="皮质很好" extid="536870917" cname="皮质很好" cg="0-12-5">
+                <div class="big" cg="0-12-5">
+                  皮质很好
+                </div>
+                <div class="right" cg="0-12-5">
+                </div>
+                </li>
+                <li class="check_li " filter-cate="ext" tid="536895311" tname="质量不错" extid="536870917" cname="质量不错" cg="0-12-6">
+                <div class="big" cg="0-12-6">
+                  质量不错
+                </div>
+                <div class="right" cg="0-12-6">
+                </div>
+                </li>
+                <li class="arrow_li" data-filter="536870917">
+                <div class="big">
+                  更多大家说
+                </div>
+                <div class="right">
+                </div>
+                </li>
+              </ul>
+            </div>
+            </li>
+          </ul>
+          <div id="filterClearBtn" class="s_btn disabled" disb="0" cg="0-8-19">
+            清除选项
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mod_fixed_wrapper mod_filter_fixed in" id="sortBlock">
+      <!-- mod_filter_fixed -->
+      <div class="mod_filter">
+        <div class="mod_filter_inner">
+          <a href="javascript:" cg="0-2-1" class="no_icon select" sort-type="default">默认</a>
+          <a href="javascript:" cg="0-2-2" class="" sort-type="price" mark="1">价格<i class="icon_sort" cg="0-2-2"></i></a><!-- filter_desc -->
+          <a href="javascript:" cg="0-2-4" class="state_switch" sort-type="sale">销量<i class="icon_sort_single" cg="0-2-4"></i></a>
+          <a href="javascript:" cg="0-2-5" class="state_switch" sort-type="comment">评价数<i class="icon_sort_single" cg="0-2-5"></i></a>
+          <a href="javascript:" cg="0-2-7" class="switch" sort-type="listmode"><i class="icon_switch" cg="0-2-7"></i></a><!-- switch_list -->
+        </div>
+      </div>
+    </div>
+    <div class="mod_itemlist_small mod_search_rec hide" id="brandAdv">
+    </div>
+    <div class="s_null hide" id="sNull01">
+      <h5>抱歉，没有找到符合条件的商品。</h5>
+    </div>
+    <div class="s_null hide" id="sNull02">
+      <h5>抱歉，没有找到符合条件的商品。</h5>
+      <p>
+        我们为您去除了筛选条件，得到以下搜索结果。
+      </p>
+    </div>
+    <div class="s_found" id="sFound">
+      <p class="found_tip_2">
+        <!--span id="sFoundTip1" class="hide">隐藏了不相关的商品，</span-->找到<!--span class="letter15" id="foundKeyTip"></span-->相关商品 <span id="totResult">18081</span> 件。<span class="location" id="addName">配送至：山西</span>
+      </p>
+    </div>
+    <div class="wx_loading2 hide" id="loadingLogo2">
+      <i class="wx_loading_icon"></i>
+    </div>
+    <!-- 一栏/两栏 切换 mod_itemlist_small/mod_itemgrid -->
+    <div class="mod_itemlist_small" id="itemList">
+      <div class="hproduct" skuid="1065832707" pos="1" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1065832707" ind="1" page="1" cg="0-3-1" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1065832707&amp;ptag=37024.1.1&amp;price=199.00&amp;fs=1">
+        <p class="cover" cg="0-3-1">
+          <img init_src="jfs/t244/155/890060644/231801/b345a535/53f2ca61N53d67e17.jpg" alt="" inited="1" skuid="1065832707" cg="0-3-1" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png" style="background-image: url(http://img12.360buyimg.com/n2/jfs/t244/155/890060644/231801/b345a535/53f2ca61N53d67e17.jpg);">
+        </p>
+        <p class="fn" cg="0-3-1">
+          伦威保罗LENWEBOLO<font class="skcolor_ljg">男包</font>手提男士<font class="skcolor_ljg">公文包</font>商务功能皮包休闲单肩<font class="skcolor_ljg">包男</font>韩版包包 横款灰蓝丨3件8.8折
+        </p>
+        <p class="prices" cg="0-3-1" id="price_1065832707">
+          <strong cg="0-3-1"><em id="dp_J_1065832707" cg="0-3-1">¥199.00</em></strong><span class="hot">赠品</span>
+        </p>
+        <p class="sku" cg="0-3-1">
+          <span class="comment_num"><span id="com_1065832707">4923</span>人评价</span><span class="comment_rate">好评率96%</span><span class="stock hide" id="stock_1065832707">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1015905285" pos="2" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1015905285" ind="2" page="1" cg="0-3-2" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1015905285&amp;ptag=37024.1.1&amp;price=128.00&amp;fs=1">
+        <p class="cover" cg="0-3-2">
+          <img init_src="jfs/t304/58/1162491859/257693/dce2fb35/54326a3bNe839ff7d.jpg" alt="" inited="1" skuid="1015905285" cg="0-3-2" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png" style="background-image: url(http://img10.360buyimg.com/n2/jfs/t304/58/1162491859/257693/dce2fb35/54326a3bNe839ff7d.jpg);">
+        </p>
+        <p class="fn" cg="0-3-2">
+          马克尚顿<font class="skcolor_ljg">男包</font>男士包手提<font class="skcolor_ljg">公文包</font>AM014 蓝色-1F 手提<font class="skcolor_ljg">公文包</font>
+        </p>
+        <p class="prices" cg="0-3-2" id="price_1015905285">
+          <strong cg="0-3-2"><em id="dp_J_1015905285" cg="0-3-2">¥128.00</em></strong><span class="hot">赠品</span>
+        </p>
+        <p class="sku" cg="0-3-2">
+          <span class="comment_num"><span id="com_1015905285">3134</span>人评价</span><span class="comment_rate">好评率94%</span><span class="stock hide" id="stock_1015905285">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1235672" pos="3" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1235672" ind="3" page="1" cg="0-3-3" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1235672&amp;ptag=37024.1.1&amp;price=249.00&amp;fs=1">
+        <p class="cover" cg="0-3-3">
+          <img init_src="jfs/t628/20/92921531/88612/1eafd659/54618c9dNc2897f24.jpg" alt="" inited="1" skuid="1235672" cg="0-3-3" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png" style="background-image: url(http://img12.360buyimg.com/n2/jfs/t628/20/92921531/88612/1eafd659/54618c9dNc2897f24.jpg);">
+        </p>
+        <p class="fn" cg="0-3-3">
+          七匹狼（SEPTWOLVES）男士手提包 商务斜挎14寸笔记本<font class="skcolor_ljg">公文男包</font> L11041484-01黑色
+        </p>
+        <p class="prices" cg="0-3-3" id="price_1235672">
+          <strong cg="0-3-3"><em id="dp_J_1235672" cg="0-3-3">¥249.00</em></strong><span class="hot">赠品</span>
+        </p>
+        <p class="sku" cg="0-3-3">
+          <span class="comment_num"><span id="com_1235672">85</span>人评价</span><span class="comment_rate">好评率93%</span><span class="stock hide" id="stock_1235672">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1069261390" pos="4" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1069261390" ind="4" page="1" cg="0-3-4" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1069261390&amp;ptag=37024.1.1&amp;price=120.00&amp;fs=1">
+        <p class="cover" cg="0-3-4">
+          <img init_src="jfs/t277/20/1736260669/133160/5cd89483/5440c22dNb0c6b3d2.jpg" alt="" inited="1" skuid="1069261390" cg="0-3-4" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png" style="background-image: url(http://img10.360buyimg.com/n2/jfs/t277/20/1736260669/133160/5cd89483/5440c22dNb0c6b3d2.jpg);">
+        </p>
+        <p class="fn" cg="0-3-4">
+          ZEFER男士<font class="skcolor_ljg">包公文包</font>男士手提<font class="skcolor_ljg">包男</font>单肩包 卡其 横款
+        </p>
+        <p class="prices" cg="0-3-4" id="price_1069261390">
+          <strong cg="0-3-4"><em id="dp_J_1069261390" cg="0-3-4">¥120.00</em></strong>
+        </p>
+        <p class="sku" cg="0-3-4">
+          <span class="comment_num"><span id="com_1069261390">2049</span>人评价</span><span class="comment_rate">好评率96%</span><span class="stock hide" id="stock_1069261390">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1077058397" pos="5" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1077058397" ind="5" page="1" cg="0-3-5" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1077058397&amp;ptag=37024.1.1&amp;price=319.00&amp;fs=1">
+        <p class="cover" cg="0-3-5">
+          <img init_src="jfs/t316/17/564477076/272101/ad92512/54193f4eN026120a7.jpg" alt="" inited="1" skuid="1077058397" cg="0-3-5" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png" style="background-image: url(http://img12.360buyimg.com/n2/jfs/t316/17/564477076/272101/ad92512/54193f4eN026120a7.jpg);">
+        </p>
+        <p class="fn" cg="0-3-5">
+          七匹狼男横款大真皮商务<font class="skcolor_ljg">公文包</font>1A2514025-28
+        </p>
+        <p class="prices" cg="0-3-5" id="price_1077058397">
+          <strong cg="0-3-5"><em id="dp_J_1077058397" cg="0-3-5">¥319.00</em></strong><span class="hot">赠豆</span>
+        </p>
+        <p class="sku" cg="0-3-5">
+          <span class="comment_num"><span id="com_1077058397">83</span>人评价</span><span class="comment_rate">好评率87%</span><span class="stock hide" id="stock_1077058397">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1178362060" pos="6" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1178362060" ind="6" page="1" cg="0-3-6" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1178362060&amp;ptag=37024.1.1&amp;price=329.00&amp;fs=1">
+        <p class="cover" cg="0-3-6">
+          <img init_src="jfs/t289/212/34623547/151493/516de047/53ffad29N04f92a70.jpg" alt="" inited="0" skuid="1178362060" cg="0-3-6" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png">
+        </p>
+        <p class="fn" cg="0-3-6">
+          七匹狼SEPTWOLVES商务<font class="skcolor_ljg">公文包</font> 男士单肩斜跨<font class="skcolor_ljg">男包</font>横款牛皮手提包 红棕色 大包
+        </p>
+        <p class="prices" cg="0-3-6" id="price_1178362060">
+          <strong cg="0-3-6"><em id="dp_J_1178362060" cg="0-3-6">¥329.00</em></strong>
+        </p>
+        <p class="sku" cg="0-3-6">
+          <span class="comment_num"><span id="com_1178362060">17</span>人评价</span><span class="comment_rate">好评率94%</span><span class="stock hide" id="stock_1178362060">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1050976166" pos="7" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1050976166" ind="7" page="1" cg="0-3-7" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1050976166&amp;ptag=37024.1.1&amp;price=338.00&amp;fs=1">
+        <p class="cover" cg="0-3-7">
+          <img init_src="jfs/t217/171/635237037/489156/54fcef46/53eed735N4099344c.jpg" alt="" inited="0" skuid="1050976166" cg="0-3-7" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png">
+        </p>
+        <p class="fn" cg="0-3-7">
+          蒙特布鲁斯 正品高档牛皮<font class="skcolor_ljg">男包</font>商务<font class="skcolor_ljg">公文包</font>男士手提包 时尚横款单肩包 黑色
+        </p>
+        <p class="prices" cg="0-3-7" id="price_1050976166">
+          <strong cg="0-3-7"><em id="dp_J_1050976166" cg="0-3-7">¥338.00</em></strong>
+        </p>
+        <p class="sku" cg="0-3-7">
+          <span class="comment_num"><span id="com_1050976166">2468</span>人评价</span><span class="comment_rate">好评率95%</span><span class="stock hide" id="stock_1050976166">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1142013" pos="8" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1142013" ind="8" page="1" cg="0-3-8" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1142013&amp;ptag=37024.1.1&amp;price=499.00&amp;fs=1">
+        <p class="cover" cg="0-3-8">
+          <img init_src="jfs/t178/356/1283429093/85212/d33bfc3e/53ab8508Neeaf3030.jpg" alt="" inited="0" skuid="1142013" cg="0-3-8" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png">
+        </p>
+        <p class="fn" cg="0-3-8">
+          七匹狼（SEPTWOLVES） 男士<font class="skcolor_ljg">公文包</font> 商务休闲大容量手提<font class="skcolor_ljg">公文</font>系列 1A3433074-15深啡色
+        </p>
+        <p class="prices" cg="0-3-8" id="price_1142013">
+          <strong cg="0-3-8"><em id="dp_J_1142013" cg="0-3-8">¥499.00</em></strong><span class="hot">赠品</span>
+        </p>
+        <p class="sku" cg="0-3-8">
+          <span class="comment_num"><span id="com_1142013">256</span>人评价</span><span class="comment_rate">好评率92%</span><span class="stock hide" id="stock_1142013">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1097707427" pos="9" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1097707427" ind="9" page="1" cg="0-3-9" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1097707427&amp;ptag=37024.1.1&amp;price=699.00&amp;fs=1">
+        <p class="cover" cg="0-3-9">
+          <img init_src="jfs/t229/314/328500300/305828/d5910335/53e97b84Nbdedd868.jpg" alt="" inited="0" skuid="1097707427" cg="0-3-9" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png">
+        </p>
+        <p class="fn" cg="0-3-9">
+          七匹狼SEPTWOLVES男士休闲单肩手提包商务<font class="skcolor_ljg">公文包</font> 1A1922045-15
+        </p>
+        <p class="prices" cg="0-3-9" id="price_1097707427">
+          <strong cg="0-3-9"><em id="dp_J_1097707427" cg="0-3-9">¥699.00</em></strong>
+        </p>
+        <p class="sku" cg="0-3-9">
+          <span class="comment_num"><span id="com_1097707427">163</span>人评价</span><span class="comment_rate">好评率90%</span><span class="stock hide" id="stock_1097707427">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1013068610" pos="10" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1013068610" ind="10" page="1" cg="0-3-10" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1013068610&amp;ptag=37024.1.1&amp;price=289.00&amp;fs=1">
+        <p class="cover" cg="0-3-10">
+          <img init_src="jfs/t217/304/1723125022/472633/250777df/53fd8e36N7f1d53a1.jpg" alt="" inited="0" skuid="1013068610" cg="0-3-10" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png">
+        </p>
+        <p class="fn" cg="0-3-10">
+          皮客优一P.kuone<font class="skcolor_ljg">男包</font>手提包 男 <font class="skcolor_ljg">公文包</font>商务包 男式真皮单肩斜跨包 P112811-5 啡色-可放14寸笔记本  均码
+        </p>
+        <p class="prices" cg="0-3-10" id="price_1013068610">
+          <strong cg="0-3-10"><em id="dp_J_1013068610" cg="0-3-10">¥289.00</em></strong><span class="hot">赠品</span>
+        </p>
+        <p class="sku" cg="0-3-10">
+          <span class="comment_num"><span id="com_1013068610">5162</span>人评价</span><span class="comment_rate">好评率95%</span><span class="stock hide" id="stock_1013068610">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1273854989" pos="11" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1273854989" ind="11" page="1" cg="0-3-11" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1273854989&amp;ptag=37024.1.1&amp;price=249.00&amp;fs=1">
+        <p class="cover" cg="0-3-11">
+          <img init_src="jfs/t304/282/602245984/361643/906b47e1/541a9b40N718663bc.jpg" alt="" inited="0" skuid="1273854989" cg="0-3-11" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png">
+        </p>
+        <p class="fn" cg="0-3-11">
+          西部牛匠 精品<font class="skcolor_ljg">男包</font>商务<font class="skcolor_ljg">公文包</font>牛皮手提包 双拉链包XSW12221
+        </p>
+        <p class="prices" cg="0-3-11" id="price_1273854989">
+          <strong cg="0-3-11"><em id="dp_J_1273854989" cg="0-3-11">¥249.00</em></strong><span class="hot">赠品</span>
+        </p>
+        <p class="sku" cg="0-3-11">
+          <span class="comment_num"><span id="com_1273854989">1258</span>人评价</span><span class="comment_rate">好评率99%</span><span class="stock hide" id="stock_1273854989">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1022345094" pos="12" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1022345094" ind="12" page="1" cg="0-3-12" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1022345094&amp;ptag=37024.1.1&amp;price=568.00&amp;fs=1">
+        <p class="cover" cg="0-3-12">
+          <img init_src="jfs/t283/63/1961947383/201352/48dc1254/5449de60N7b72f07e.jpg" alt="" inited="0" skuid="1022345094" cg="0-3-12" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png">
+        </p>
+        <p class="fn" cg="0-3-12">
+          BDJS罗玛·搏登爵士 高端牛皮<font class="skcolor_ljg">男包</font> 商务<font class="skcolor_ljg">公文包</font> 男士单肩包 男式皮包
+        </p>
+        <p class="prices" cg="0-3-12" id="price_1022345094">
+          <strong cg="0-3-12"><em id="dp_J_1022345094" cg="0-3-12">¥568.00</em></strong><span class="hot">赠豆</span>
+        </p>
+        <p class="sku" cg="0-3-12">
+          <span class="comment_num"><span id="com_1022345094">830</span>人评价</span><span class="comment_rate">好评率97%</span><span class="stock hide" id="stock_1022345094">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="849128" pos="13" cid="1672~2576~1455">
+        <a href="javascript:" id="link_849128" ind="13" page="1" cg="0-3-13" tourl="http://mm.wanggou.com/item/jd.shtml?sku=849128&amp;ptag=37024.1.1&amp;price=519.00&amp;fs=1">
+        <p class="cover" cg="0-3-13">
+          <img init_src="jfs/t190/316/2050870986/128472/1bac0c42/53c4e392Nc71725da.jpg" alt="" inited="0" skuid="849128" cg="0-3-13" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png">
+        </p>
+        <p class="fn" cg="0-3-13">
+          七匹狼 SEPTWOLVES时尚休闲牛津布男士<font class="skcolor_ljg">公文包</font>1A1223044-02黑色
+        </p>
+        <p class="prices" cg="0-3-13" id="price_849128">
+          <strong cg="0-3-13"><em id="dp_J_849128" cg="0-3-13">¥519.00</em></strong>
+        </p>
+        <p class="sku" cg="0-3-13">
+          <span class="comment_num"><span id="com_849128">164</span>人评价</span><span class="comment_rate">好评率91%</span><span class="stock hide" id="stock_849128">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1037065266" pos="14" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1037065266" ind="14" page="1" cg="0-3-14" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1037065266&amp;ptag=37024.1.1&amp;price=278.00&amp;fs=1">
+        <p class="cover" cg="0-3-14">
+          <img init_src="jfs/t259/257/13105933/49216/98b72d0b/53e34205N07a6cf62.jpg" alt="" inited="0" skuid="1037065266" cg="0-3-14" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png">
+        </p>
+        <p class="fn" cg="0-3-14">
+          AIM <font class="skcolor_ljg">男包</font>男士手提包商务<font class="skcolor_ljg">公文包</font>牛皮斜挎包 M031 黑色横款
+        </p>
+        <p class="prices" cg="0-3-14" id="price_1037065266">
+          <strong cg="0-3-14"><em id="dp_J_1037065266" cg="0-3-14">¥278.00</em></strong>
+        </p>
+        <p class="sku" cg="0-3-14">
+          <span class="comment_num"><span id="com_1037065266">5683</span>人评价</span><span class="comment_rate">好评率97%</span><span class="stock hide" id="stock_1037065266">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1237107605" pos="15" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1237107605" ind="15" page="1" cg="0-3-15" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1237107605&amp;ptag=37024.1.1&amp;price=389.00&amp;fs=1">
+        <p class="cover" cg="0-3-15">
+          <img init_src="jfs/t238/197/1198088966/133656/17c1f8b4/53f6e18dNaa4376c3.jpg" alt="" inited="0" skuid="1237107605" cg="0-3-15" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png">
+        </p>
+        <p class="fn" cg="0-3-15">
+          七匹狼SEPTWOLVES<font class="skcolor_ljg">男包</font>时尚休闲新品1A3332171-08 单肩斜挎手提<font class="skcolor_ljg">公文包</font>蓝色
+        </p>
+        <p class="prices" cg="0-3-15" id="price_1237107605">
+          <strong cg="0-3-15"><em id="dp_J_1237107605" cg="0-3-15">¥389.00</em></strong>
+        </p>
+        <p class="sku" cg="0-3-15">
+          <span class="comment_num"><span id="com_1237107605">25</span>人评价</span><span class="comment_rate">好评率92%</span><span class="stock hide" id="stock_1237107605">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1063184792" pos="16" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1063184792" ind="16" page="1" cg="0-3-16" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1063184792&amp;ptag=37024.1.1&amp;price=298.00&amp;fs=1">
+        <p class="cover" cg="0-3-16">
+          <img init_src="jfs/t238/64/1226173474/188784/8480563a/53f83392Nbb5daa1a.jpg" alt="" inited="0" skuid="1063184792" cg="0-3-16" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png">
+        </p>
+        <p class="fn" cg="0-3-16">
+          SXLLNS赛伦斯 男士休闲时尚斜挎手提包真皮<font class="skcolor_ljg">男包公文包</font>SX-D5038 黑黄色 大号
+        </p>
+        <p class="prices" cg="0-3-16" id="price_1063184792">
+          <strong cg="0-3-16"><em id="dp_J_1063184792" cg="0-3-16">¥298.00</em></strong>
+        </p>
+        <p class="sku" cg="0-3-16">
+          <span class="comment_num"><span id="com_1063184792">5293</span>人评价</span><span class="comment_rate">好评率98%</span><span class="stock hide" id="stock_1063184792">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1207915509" pos="17" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1207915509" ind="17" page="1" cg="0-3-17" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1207915509&amp;ptag=37024.1.1&amp;price=238.00&amp;fs=1">
+        <p class="cover" cg="0-3-17">
+          <img init_src="jfs/t301/142/1619899024/94680/ee61cf9d/543e444aNbd2b3f3b.jpg" alt="" inited="0" skuid="1207915509" cg="0-3-17" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png">
+        </p>
+        <p class="fn" cg="0-3-17">
+          七匹狼SEPTWOLVES新款时尚商务啡色牛皮男士单肩包/斜挎包
+        </p>
+        <p class="prices" cg="0-3-17" id="price_1207915509">
+          <strong cg="0-3-17"><em id="dp_J_1207915509" cg="0-3-17">¥238.00</em></strong><span class="hot">赠品</span>
+        </p>
+        <p class="sku" cg="0-3-17">
+          <span class="comment_num"><span id="com_1207915509">72</span>人评价</span><span class="comment_rate">好评率96%</span><span class="stock hide" id="stock_1207915509">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1207179682" pos="18" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1207179682" ind="18" page="1" cg="0-3-18" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1207179682&amp;ptag=37024.1.1&amp;price=199.00&amp;fs=1">
+        <p class="cover" cg="0-3-18">
+          <img init_src="jfs/t247/135/1064764564/462487/822aa63/53f5c382N078cdc53.jpg" alt="" inited="0" skuid="1207179682" cg="0-3-18" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png">
+        </p>
+        <p class="fn" cg="0-3-18">
+          佰利老人男士商务<font class="skcolor_ljg">包男包公文</font>包包男手提<font class="skcolor_ljg">包男</font>单肩斜挎包真皮<font class="skcolor_ljg">包男包</font>休闲电脑包7705 商务黑-7705
+        </p>
+        <p class="prices" cg="0-3-18" id="price_1207179682">
+          <strong cg="0-3-18"><em id="dp_J_1207179682" cg="0-3-18">¥199.00</em></strong><span class="hot">赠品</span>
+        </p>
+        <p class="sku" cg="0-3-18">
+          <span class="comment_num"><span id="com_1207179682">1007</span>人评价</span><span class="comment_rate">好评率98%</span><span class="stock hide" id="stock_1207179682">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1037593168" pos="19" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1037593168" ind="19" page="1" cg="0-3-19" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1037593168&amp;ptag=37024.1.1&amp;price=299.00&amp;fs=1">
+        <p class="cover" cg="0-3-19">
+          <img init_src="jfs/t562/100/591533802/425898/2b2085ab/54753a44N4974e62b.jpg" alt="" inited="0" skuid="1037593168" cg="0-3-19" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png">
+        </p>
+        <p class="fn" cg="0-3-19">
+          萨蒙斯<font class="skcolor_ljg">男包</font> 真皮头层牛皮商务休闲手提包 单肩斜挎<font class="skcolor_ljg">公文包</font> 153 雅典黑
+        </p>
+        <p class="prices" cg="0-3-19" id="price_1037593168">
+          <strong cg="0-3-19"><em id="dp_J_1037593168" cg="0-3-19">¥299.00</em></strong><span class="hot">赠品</span>
+        </p>
+        <p class="sku" cg="0-3-19">
+          <span class="comment_num"><span id="com_1037593168">3593</span>人评价</span><span class="comment_rate">好评率99%</span><span class="stock hide" id="stock_1037593168">无货</span>
+        </p>
+        </a>
+      </div>
+      <div class="hproduct" skuid="1241685254" pos="20" cid="1672~2576~1455">
+        <a href="javascript:" id="link_1241685254" ind="20" page="1" cg="0-3-20" tourl="http://mm.wanggou.com/item/jd.shtml?sku=1241685254&amp;ptag=37024.1.1&amp;price=399.00&amp;fs=1">
+        <p class="cover" cg="0-3-20">
+          <img init_src="jfs/t373/152/707198271/181252/b4c54287/542bbcd6Nfb304da0.jpg" alt="" inited="0" skuid="1241685254" cg="0-3-20" src="http://pics2.paipaiimg.com/update/20140701/index_1x1.png">
+        </p>
+        <p class="fn" cg="0-3-20">
+          七匹狼（SEPTWOLVES）欧美时尚真皮商务邮差手提包 斜挎<font class="skcolor_ljg">男包</font>单肩包男士牛皮<font class="skcolor_ljg">公文</font>皮包 1A3434115-18 啡色
+        </p>
+        <p class="prices" cg="0-3-20" id="price_1241685254">
+          <strong cg="0-3-20"><em id="dp_J_1241685254" cg="0-3-20">¥399.00</em></strong>
+        </p>
+        <p class="sku" cg="0-3-20">
+          <span class="comment_num"><span id="com_1241685254">36</span>人评价</span><span class="comment_rate">好评率82%</span><span class="stock hide" id="stock_1241685254">无货</span>
+        </p>
+        </a>
+      </div>
+    </div>
+    <div class="wx_loading2" id="loadingLogo">
+      <i class="wx_loading_icon"></i>
+    </div>
+    <div class="s_empty hide" id="noMoreTips">
+      已无更多商品，您可以换一个关键字搜一下哦~
+    </div>
+    <div class="s_page hide" id="sPage">
+      <a class="disabled" href="javascript:;" id="pagePre" cg="0-5-1">上一页</a>
+      <div class="selector">
+        <span id="selectorInfo">1/91</span><i class="arrow"></i>
+        <select class="selector_select" id="selSelect" cg="0-5-2">
+          <option value="1">第 1 页</option>
+          <option value="2">第 2 页</option>
+          <option value="3">第 3 页</option>
+          <option value="4">第 4 页</option>
+          <option value="5">第 5 页</option>
+          <option value="6">第 6 页</option>
+          <option value="7">第 7 页</option>
+          <option value="8">第 8 页</option>
+          <option value="9">第 9 页</option>
+          <option value="10">第 10 页</option>
+          <option value="11">第 11 页</option>
+          <option value="12">第 12 页</option>
+          <option value="13">第 13 页</option>
+          <option value="14">第 14 页</option>
+          <option value="15">第 15 页</option>
+          <option value="16">第 16 页</option>
+          <option value="17">第 17 页</option>
+          <option value="18">第 18 页</option>
+          <option value="19">第 19 页</option>
+          <option value="20">第 20 页</option>
+          <option value="21">第 21 页</option>
+          <option value="22">第 22 页</option>
+          <option value="23">第 23 页</option>
+          <option value="24">第 24 页</option>
+          <option value="25">第 25 页</option>
+          <option value="26">第 26 页</option>
+          <option value="27">第 27 页</option>
+          <option value="28">第 28 页</option>
+          <option value="29">第 29 页</option>
+          <option value="30">第 30 页</option>
+          <option value="31">第 31 页</option>
+          <option value="32">第 32 页</option>
+          <option value="33">第 33 页</option>
+          <option value="34">第 34 页</option>
+          <option value="35">第 35 页</option>
+          <option value="36">第 36 页</option>
+          <option value="37">第 37 页</option>
+          <option value="38">第 38 页</option>
+          <option value="39">第 39 页</option>
+          <option value="40">第 40 页</option>
+          <option value="41">第 41 页</option>
+          <option value="42">第 42 页</option>
+          <option value="43">第 43 页</option>
+          <option value="44">第 44 页</option>
+          <option value="45">第 45 页</option>
+          <option value="46">第 46 页</option>
+          <option value="47">第 47 页</option>
+          <option value="48">第 48 页</option>
+          <option value="49">第 49 页</option>
+          <option value="50">第 50 页</option>
+          <option value="51">第 51 页</option>
+          <option value="52">第 52 页</option>
+          <option value="53">第 53 页</option>
+          <option value="54">第 54 页</option>
+          <option value="55">第 55 页</option>
+          <option value="56">第 56 页</option>
+          <option value="57">第 57 页</option>
+          <option value="58">第 58 页</option>
+          <option value="59">第 59 页</option>
+          <option value="60">第 60 页</option>
+          <option value="61">第 61 页</option>
+          <option value="62">第 62 页</option>
+          <option value="63">第 63 页</option>
+          <option value="64">第 64 页</option>
+          <option value="65">第 65 页</option>
+          <option value="66">第 66 页</option>
+          <option value="67">第 67 页</option>
+          <option value="68">第 68 页</option>
+          <option value="69">第 69 页</option>
+          <option value="70">第 70 页</option>
+          <option value="71">第 71 页</option>
+          <option value="72">第 72 页</option>
+          <option value="73">第 73 页</option>
+          <option value="74">第 74 页</option>
+          <option value="75">第 75 页</option>
+          <option value="76">第 76 页</option>
+          <option value="77">第 77 页</option>
+          <option value="78">第 78 页</option>
+          <option value="79">第 79 页</option>
+          <option value="80">第 80 页</option>
+          <option value="81">第 81 页</option>
+          <option value="82">第 82 页</option>
+          <option value="83">第 83 页</option>
+          <option value="84">第 84 页</option>
+          <option value="85">第 85 页</option>
+          <option value="86">第 86 页</option>
+          <option value="87">第 87 页</option>
+          <option value="88">第 88 页</option>
+          <option value="89">第 89 页</option>
+          <option value="90">第 90 页</option>
+          <option value="91">第 91 页</option>
+        </select>
+      </div>
+      <a href="javascript:;" id="pageNext" cg="0-5-3" class="">下一页</a>
+    </div>
+  </div>
+</div>

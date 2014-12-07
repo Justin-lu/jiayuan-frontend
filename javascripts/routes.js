@@ -78,6 +78,11 @@ webApp.config(['$routeProvider', function ($routeProvider) {
     controller  : 'userController'
   })
 
+  .when('/search/:keyword', {
+    templateUrl : 'templates/search_detail.html',
+    controller  : 'serarchController'
+  });
+
 
 }]);
 

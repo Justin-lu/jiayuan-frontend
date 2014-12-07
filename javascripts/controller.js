@@ -1,7 +1,7 @@
 'use strict';
 // Controllers
 
-var webAppControllers = angular.module('webAppControllers',[]);
+var webAppControllers = angular.module('webAppControllers', []);
 
 // create the controller and inject Angular's $scope
 
@@ -15,14 +15,14 @@ webAppControllers.controller('homeController', function($scope) {
 
   // init slider picture
   var mySwiper = $('.swiper-container').swiper({
-      //Your options here:
-      mode:'horizontal',
-      calculateHeight: true,
-      speed:750,
-      autoplay: 3000,
-      pagination: '.pagination',
-      paginationClickable: true,
-      loop: true
+    //Your options here:
+    mode: 'horizontal',
+    calculateHeight: true,
+    speed: 750,
+    autoplay: 3000,
+    pagination: '.pagination',
+    paginationClickable: true,
+    loop: true
       //etc..
   });
 });
@@ -31,21 +31,29 @@ webAppControllers.controller('homeController', function($scope) {
 webAppControllers.controller('showController', function($scope) {
   $scope.message = 'show page';
   $(".nav-header").text("团购详情");
-
 });
 
 // category
-webAppControllers.controller('categoryController', function($scope){
+webAppControllers.controller('categoryController', function($scope) {
   $scope.message = 'show page';
   $(".nav-header").text("分类列表");
   $(".category").addClass('active').siblings().removeClass('active');
   var height = $(window).height() - 52 - 45 + 'px';
   $('#left_sroll, #right_sroll').css('height', height);
 
-  var leftSroll = new IScroll('#left_sroll', { tap:true, mouseWheel: true, click: true });
-  var rightSroll = new IScroll('#right_sroll', { mouseWheel: true, click: true });
+  var leftSroll = new IScroll('#left_sroll', {
+    tap: true,
+    mouseWheel: true,
+    click: true,
+    bounceEasing: 'elastic',
+    bounceTime: 1200
+  });
+  var rightSroll = new IScroll('#right_sroll', {
+    mouseWheel: true,
+    click: true
+  });
 
-  $('#left_sroll ul li').on('tap', function(){
+  $('#left_sroll ul li').on('tap', function() {
     $(this).addClass('cur').siblings().removeClass('cur');
     leftSroll.scrollToElement(this);
     // filter right_scroll;
