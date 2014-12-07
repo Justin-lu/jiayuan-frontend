@@ -133,7 +133,7 @@
 
 .category1 {
   background-color: #f3f3f3;
-  width: 76px;
+  width: 100%;
 }
 
 .category1 li {
@@ -141,6 +141,7 @@
   line-height: 44px;
   padding: 0 10px;
   border-top: 1px solid #e5e5e5;
+  text-align: center;
 }
 
 .category1 li:first-child {
@@ -161,7 +162,7 @@
   font-size: 0;
   display: inline-block;
   border-width: 5px;
-  border-color: transparent #fff transparent transparent;
+  border-color: transparent #ec4c4c transparent transparent;
   border-style: dashed solid dashed dashed;
   position: absolute;
   top: 50%;
@@ -228,17 +229,18 @@
   overflow: hidden;
   position: absolute;
   top: 45px;
-  left: 0px;
   background-color: rgb(243, 243, 243);
   min-height: 450px;
 }
 
 #left_sroll {
   width: 25%;
+  left: 0px;
 }
 
 #right_sroll {
   width: 75%;
+  left: 25%;
 }
 
 /*  |xGv00|cbc7e1bedde69d68216eb7ffd974d834 */
