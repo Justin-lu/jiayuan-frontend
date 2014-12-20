@@ -1,0 +1,79 @@
+#clearing {
+  height: 100%;
+  width: 100%;
+  background: white;
+}
+
+#clearing .info select,#clearing .info input {
+  width: 70%;
+}
+#clearing .info label {
+  width: 25%;
+  display: inline-block;
+}
+
+#clearing .info p {
+  padding: 5px;
+  font-size: 16px;
+}
+#clearing .s-price{
+  height: 22px;
+  font-size: 10px;
+  line-height: 20px;
+}
+
+#clearing .price-summary {
+  font-size: 16px;
+  color: #FF6600;
+}
+
+#clearing .info {
+  margin: 20px 15px;
+  padding-bottom: 5px;
+  background-color: #E7E6E6;
+  border-radius: 10px;
+}
+
+#clearing .info-list{
+  background: white;
+  margin: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+#clearing .list-item{
+  padding: 10px 0;
+  margin: 0 10px;
+  color: #7F7F79;
+}
+
+.bottom-line{
+  border-bottom: 1px solid #c4c3bc;
+}
+
+#clearing .botton-item{
+  padding-top: 1px;
+  margin: 0 10px;
+  color: #7F7F79;
+}
+
+#clearing .btn-clearing{
+  width: 100%;
+  line-height: 20px;
+  font-size: 10px;
+  height: 20px;
+  border-radius: 0px;
+  text-align: left;
+  background-color: #E7E6E6;
+  color: rgb(71, 69, 69);
+}
+
+#clearing .btn-clearing.active{
+  background-color:#FF6600;
+  color: #fff
+}
+
+
+
+

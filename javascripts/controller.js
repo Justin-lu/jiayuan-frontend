@@ -31,6 +31,7 @@ webAppControllers.controller('homeController', function($scope) {
 webAppControllers.controller('showController', function($scope) {
   $scope.message = 'show page';
   $(".nav-header").text("团购详情");
+  $('.navbar').hide();
 });
 
 // category
@@ -58,18 +59,27 @@ webAppControllers.controller('categoryController', function($scope) {
     leftSroll.scrollToElement(this);
     // filter right_scroll;
   });
+
+  $('.navbar').show();
 });
 
 // cart
 webAppControllers.controller('cartController', function($scope) {
   $(".cart").addClass('active').siblings().removeClass('active');
+  $('.navbar').show();
 });
 
 // user
 webAppControllers.controller('userController', function($scope) {
   $(".user").addClass('active').siblings().removeClass('active');
+  $('.navbar').show();
 });
 
 webAppControllers.controller('serarchController', function($scope){
+  $('.navbar').show();
+});
 
+webAppControllers.controller('clearingController', function($scope){
+  console.log(window.foo='something')
+  $('.navbar').hide();
 });

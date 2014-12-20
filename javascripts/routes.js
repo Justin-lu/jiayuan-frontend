@@ -80,8 +80,12 @@ webApp.config(['$routeProvider', function ($routeProvider) {
   .when('/search/:keyword', {
     templateUrl : 'templates/search_detail.html',
     controller  : 'serarchController'
-  });
+  })
 
+  .when('/clearing/:ids', {
+    templateUrl : 'templates/clearing.html',
+    controller  : 'clearingController'
+  });
 
 }]);
 
