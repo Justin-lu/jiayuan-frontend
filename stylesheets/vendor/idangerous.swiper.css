@@ -113,6 +113,7 @@ Pagination Styles
 ================================================================*/
 .swiper-pagination-switch {
   /* Stylize pagination button: */  
+  border-radius: 100%;
 
 }
 .swiper-active-switch {
