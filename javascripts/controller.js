@@ -1,41 +1,29 @@
 'use strict';
 // Controllers
 
-var webAppControllers = angular.module('webAppControllers', []);
+var webApp = angular.module('webAppControllers', []);
 
 // create the controller and inject Angular's $scope
 
 //mainController
-webAppControllers.controller('homeController', function($scope) {
+webApp.controller('homeController', function($scope) {
   // create a message to display in our view
   $scope.message = 'home page!';
   $(".nav-header").text("首页");
 
   $(".home").addClass('active').siblings().removeClass('active');
 
-  // init slider picture
-  var mySwiper = $('.swiper-container').swiper({
-    //Your options here:
-    mode: 'horizontal',
-    calculateHeight: true,
-    speed: 750,
-    autoplay: 3000,
-    pagination: '.pagination',
-    paginationClickable: true,
-    loop: true
-      //etc..
-  });
 });
 
 //showController
-webAppControllers.controller('showController', function($scope) {
+webApp.controller('showController', function($scope) {
   $scope.message = 'show page';
   $(".nav-header").text("团购详情");
   $('.navbar').hide();
 });
 
 // category
-webAppControllers.controller('categoryController', function($scope) {
+webApp.controller('categoryController', function($scope) {
   $scope.message = 'show page';
   $(".nav-header").text("分类列表");
   $(".category").addClass('active').siblings().removeClass('active');
@@ -64,22 +52,45 @@ webAppControllers.controller('categoryController', function($scope) {
 });
 
 // cart
-webAppControllers.controller('cartController', function($scope) {
+webApp.controller('cartController', function($scope) {
   $(".cart").addClass('active').siblings().removeClass('active');
   $('.navbar').show();
 });
 
 // user
-webAppControllers.controller('userController', function($scope) {
+webApp.controller('userController', function($scope) {
   $(".user").addClass('active').siblings().removeClass('active');
   $('.navbar').show();
 });
 
-webAppControllers.controller('serarchController', function($scope){
+webApp.controller('serarchController', function($scope) {
   $('.navbar').show();
 });
 
-webAppControllers.controller('clearingController', function($scope){
-  console.log(window.foo='something')
+webApp.controller('clearingController', function($scope) {
+  console.log(window.foo = 'something')
   $('.navbar').hide();
 });
+
+webApp.controller('homeSlideCtrl', ['$scope', '$http', function($scope, $http) {
+  $http({
+    method: 'GET',
+    url: 'data/slide.json'
+  }).success(function(data, status, headers, config) {
+    $scope.slides = data;
+    // init slider picture
+    $scope.$on('ngRepeatFinished', function(){
+      var mySwiper = $('.swiper-container').swiper({
+        //Your options here:
+        mode: 'horizontal',
+        calculateHeight: true,
+        speed: 750,
+        autoplay: 3000,
+        pagination: '.pagination',
+        paginationClickable: true,
+        loop: true
+          //etc..
+      });
+    })
+  }).error(function(data, status, headers, config) {});
+}]);

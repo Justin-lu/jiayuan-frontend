@@ -1,11 +1,11 @@
 <!-- 活动广告栏 -->
 <div class="swiper-container">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide"><a><img src="http://placehold.it/540x230"/></a></div>
-    <div class="swiper-slide"><a><img src="http://placehold.it/540x230"/></a></div>
-    <div class="swiper-slide"><a><img src="http://placehold.it/540x230"/></a></div>
-    <div class="swiper-slide"><a><img src="http://placehold.it/540x230"/></a></div>
-    <div class="swiper-slide"><a><img src="http://placehold.it/540x230"/></a></div>
+  <div class="swiper-wrapper" ng-controller='homeSlideCtrl'>
+    <div class="swiper-slide" ng-repeat="slide in slides" init-slider>
+      <a href="{{slide.link}}">
+        <img alt="{{slide.alt}}" ng-src="{{slide.url}}"/>
+      </a>
+    </div>
   </div>
   <div class="pagination"></div>
 </div>
@@ -28,7 +28,6 @@
   </div>
   <div class="clear"></div>
 </div>
-
 
 <!-- 四大活动板块 -->
 <div class="rukou">
