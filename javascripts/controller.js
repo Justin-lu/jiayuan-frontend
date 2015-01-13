@@ -16,11 +16,15 @@ webApp.controller('homeController', function($scope) {
 });
 
 //showController
-webApp.controller('showController', function($scope) {
+webApp.controller('showController', ['$scope', '$http', function($scope, $http) {
   $scope.message = 'show page';
   $(".nav-header").text("团购详情");
   $('.navbar').hide();
-});
+
+  $http.get('data/detail.json').success(function(data) {
+    $scope.goodData = data.data;
+  })
+}]);
 
 // category
 webApp.controller('categoryController', function($scope) {
