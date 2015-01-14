@@ -85,6 +85,11 @@ webApp.config(['$routeProvider', function ($routeProvider) {
   .when('/clearing/:ids', {
     templateUrl : 'templates/clearing.html',
     controller  : 'clearingController'
+  })
+
+  .when('/info/:uid', {
+    templateUrl : 'templates/info.html',
+    controller  : 'infoController'
   });
 
 }]);

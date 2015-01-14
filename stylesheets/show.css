@@ -165,7 +165,7 @@ ul.ul li {
     display: -ms-flexbox;
     -webkit-box-align: center;
     -ms-box-align: center;
-    width: 1.2rem;
+    width: 60%;
     padding: .28rem .2rem;
     border-left: 1px solid #ccc;
 }
@@ -446,8 +446,8 @@ dl.list .hotel-price-panel {
 }
 
 .show-cart-info .c-right {
-    float: right;
-    padding-right: 1em;
+    position: fixed;
+    right: 5px;
     padding-top: 5px;
 }
 
@@ -572,4 +572,16 @@ dl.list .hotel-price-panel {
 .info-cx span {
     padding: 0 2px;
     color: #2bb2a3;
+}
+
+.good-details {
+    padding: 20px 5px;
+    background: white;
+}
+.image-details p {
+    padding: 20px 5px;
+    border-bottom: 1px solid #ddd8ce;
+    background: white;
+    margin: 1px;
+    font-size: .34rem;
 }

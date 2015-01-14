@@ -38,6 +38,10 @@
 <body id="list deal-detail">
   <!-- angular templating -->
   <!-- this is where content will be injected -->
+
+  <div class="loading-mask">
+    <img src="/images/loading.gif">
+  </div>
   <div ng-view="" class="page-view" ng-class="pageAnimationClass"></div>
   <!-- 这个和home page 重复 需要重构 -->
   <menu></menu>

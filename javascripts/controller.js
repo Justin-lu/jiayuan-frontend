@@ -16,19 +16,23 @@ webApp.controller('homeController', function($scope) {
 });
 
 //showController
-webApp.controller('showController', ['$scope', '$http', function($scope, $http) {
-  $scope.message = 'show page';
+webApp.controller('showController', ['$scope', '$routeParams', '$http', '$sce', function($scope, $routeParams, $http, $sce) {
+  $(".loading-mask").show();
   $(".nav-header").text("团购详情");
   $('.navbar').hide();
 
-  $http.get('data/detail.json').success(function(data) {
+  var url = Helper.apiUrl("/goods/" + $routeParams.id)
+  $http.get(url).success(function(data) {
     $scope.goodData = data.data;
+    $scope.maxImage = Helper.urlWithRoot(data.data.maximage);
+    $scope.detail = $sce.trustAsHtml(data.data.detail);
+    $scope.images = data.data.images.split(',').map(function(image){ return Helper.urlWithRoot(image)});
+    $(".loading-mask").hide();
   })
 }]);
 
 // category
 webApp.controller('categoryController', function($scope) {
-  $scope.message = 'show page';
   $(".nav-header").text("分类列表");
   $(".category").addClass('active').siblings().removeClass('active');
   var height = $(window).height() - 52 - 45 + 'px';
@@ -75,6 +79,11 @@ webApp.controller('clearingController', function($scope) {
   console.log(window.foo = 'something')
   $('.navbar').hide();
 });
+
+webApp.controller('infoController', function($scope){
+  console.log(window.foo='infoPage')
+  $('.navbar').hide();
+})
 
 webApp.controller('homeSlideCtrl', ['$scope', '$http', function($scope, $http) {
   $http({
