@@ -12,6 +12,7 @@ webApp.controller('homeController', function($scope) {
   $(".nav-header").text("首页");
 
   $(".home").addClass('active').siblings().removeClass('active');
+  $(".loading-mask").hide();
 
 });
 
@@ -57,6 +58,7 @@ webApp.controller('categoryController', function($scope) {
   });
 
   $('.navbar').show();
+  $(".loading-mask").hide();
 });
 
 // cart
@@ -69,20 +71,24 @@ webApp.controller('cartController', function($scope) {
 webApp.controller('userController', function($scope) {
   $(".user").addClass('active').siblings().removeClass('active');
   $('.navbar').show();
+  $(".loading-mask").hide();
 });
 
 webApp.controller('serarchController', function($scope) {
   $('.navbar').show();
+  $(".loading-mask").hide();
 });
 
 webApp.controller('clearingController', function($scope) {
   console.log(window.foo = 'something')
   $('.navbar').hide();
+  $(".loading-mask").hide();
 });
 
 webApp.controller('infoController', function($scope){
   console.log(window.foo='infoPage')
   $('.navbar').hide();
+  $(".loading-mask").hide();
 })
 
 webApp.controller('homeSlideCtrl', ['$scope', '$http', function($scope, $http) {
@@ -105,5 +111,6 @@ webApp.controller('homeSlideCtrl', ['$scope', '$http', function($scope, $http) {
           //etc..
       });
     })
+    $(".loading-mask").hide();
   }).error(function(data, status, headers, config) {});
 }]);
