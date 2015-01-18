@@ -23,6 +23,13 @@ webApp.controller('showController', ['$scope', '$routeParams', '$http', '$sce', 
     $scope.maxImage = Helper.urlWithRoot(data.data.maximage);
     $scope.detail = $sce.trustAsHtml(data.data.detail);
     $scope.images = data.data.images.split(',').map(function(image){ return Helper.urlWithRoot(image)});
+
+    $scope.addToCart = function(){
+      var url = Helper.apiUrl("/cart/" + Helper.getUId());
+      var carts = [{'goodid': $scope.goodData.goodid, 'number': 1}];
+      var data = JSON.stringify({'carts': carts})
+      $http.post(url, data);
+    }
     $(".loading-mask").hide();
   })
 }]);
@@ -68,10 +75,30 @@ webApp.controller('categoryController', ['$scope', '$http', function($scope, $ht
 }]);
 
 // cart
-webApp.controller('cartController', function($scope) {
+webApp.controller('cartController', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http) {
+  var url = Helper.apiUrl("/cart/" + $routeParams.uid)
+  $http.get(url).success(function(data) {
+    $scope.cartItems = data.data.map(function(item){
+      item.url = Helper.urlWithRoot(item.maximage);
+      return item;
+    });
+    $scope.amount = data.amount;
+
+    // should syn to remote data;
+    $scope.add = function(index){
+      $scope.cartItems[index].quantity += 1;
+    };
+    $scope.decrease = function(index){
+      if ($scope.cartItems[index].quantity > 1){
+        $scope.cartItems[index].quantity -= 1;
+      }
+    };
+    $(".loading-mask").hide();
+  })
+
   $(".cart").addClass('active').siblings().removeClass('active');
   $('.navbar').show();
-});
+}]);
 
 // user
 webApp.controller('userController', function($scope) {

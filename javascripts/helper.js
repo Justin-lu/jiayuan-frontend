@@ -12,5 +12,10 @@ var Helper = {
 
   getUrlWithId: function(id) {
     return "/#/show/" + id;
+  },
+
+  getUId: function(){
+    return 4;
   }
+
 }

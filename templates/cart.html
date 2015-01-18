@@ -1,93 +1,39 @@
 <div class="container">
   <div id="content" class="content">
     <ul id="cart-body" class="mytable-cart">
-      <li class="odd">
-      <ul>
-        <li>
-        <div class="pic">
-          <a href="/Shop/ProductDetail.aspx?ProductID=1765"><img class="thu" src="http://www.vegg.cn/UploadFiles/shop/2014/7/201407240932227342_195_146.jpg"></a>
-          <div class="">
-          </div>
-        </div>
-        <div class="tlcon tl-only">
-          <div class="it name">
-            大漠仙枣（500g） <span>(1斤)</span>
-          </div>
-          <div class="it num">
-            68.00 * 1 = 68.00
-          </div>
-          <div class="it ac">
-            <div class="pro-buy-left">
-              <div class="acnum pro-num" id="cart_num360527">
-                <a class="pro-num-btn pro-num-del" href="javascript:;" onclick="cart.delNum(360527)">-</a><input type="text" class="pro-num-val" id="pro-num-val" maxlength="4" value="1" readonly="readonly"><a class="pro-num-btn pro-num-add" href="javascript:;" onclick="cart.addNum(360527)">+</a>
+      <li class="odd" ng-repeat='cartItem in cartItems'>
+        <ul>
+          <li>
+            <div class="pic">
+              <a><img class="thu" src="{{cartItem.url}}"></a>
+            </div>
+            <div class="tlcon tl-only">
+              <div class="it name">{{cartItem.title}}</div>
+              <div class="it num">
+                {{cartItem.nowprice}} * {{cartItem.quantity}} = {{cartItem.quantity * cartItem.nowprice}}
+              </div>
+              <div class="it ac">
+                <div class="pro-buy-left">
+                  <div class="acnum pro-num" id="cart_num360527">
+                    <a class="pro-num-btn" href="javascript:;" ng-click="decrease($index)">-</a>
+                    <input type="text" class="pro-num-val" id="pro-num-val" maxlength="4" readonly="readonly" ng-model='cartItem.quantity'>
+                    <a class="pro-num-btn" href="javascript:;" ng-click="add($index)">+</a>
+                  </div>
+                </div>
+                <div class="btn_cancle">取消</div>
               </div>
             </div>
-            <div class="btn_cancle" onclick="cart.cancle(360527)">
-              取消
-            </div>
-          </div>
-        </div>
-        <div class="clear">
-        </div>
-        </li>
-      </ul>
+            <div class="clear"></div>
+          </li>
+        </ul>
       </li>
-      <li class="edd">
-      <ul>
-        <li>
-        <div class="pic">
-          <a href="/Shop/ProductDetail.aspx?ProductID=1784"><img class="thu" src="http://www.vegg.cn/UploadFiles/shop/2014/7/201407240926425623_195_146.jpg"></a>
-          <div class="">
-          </div>
-        </div>
-        <div class="tlcon tl-only">
-          <div class="it name">
-            万力山野茶油（玻璃瓶500ml） <span>(1斤)</span>
-          </div>
-          <div class="it num">
-            108.00 * 1 = 108.00
-          </div>
-          <div class="it ac">
-            <div class="pro-buy-left">
-              <div class="acnum pro-num" id="cart_num360530">
-                <a class="pro-num-btn pro-num-del" href="javascript:;" onclick="cart.delNum(360530)">-</a><input type="text" class="pro-num-val" id="pro-num-val" maxlength="4" value="1" readonly="readonly"><a class="pro-num-btn pro-num-add" href="javascript:;" onclick="cart.addNum(360530)">+</a>
-              </div>
-            </div>
-            <div class="btn_cancle" onclick="cart.cancle(360530)">
-              取消
-            </div>
-          </div>
-        </div>
-        <div class="clear">
-        </div>
-        </li>
-      </ul>
-      </li>
-      <div class="cart-info">
-        <div class="c-left">
-          <div class="c-price">
-            <div class="cnt">
-              <span class="em">共计 <span class="im"><span id="LblMoneyGoods">¥ 176.00</span></span></span>
-              <span class="em">满<span class="im num">38</span>免运费</span>
-            </div>
-            <div class="cn">
-              <span id="LblChaMoney">自提免运费，已满<span class="im">38</span>元，免运费</span>
-            </div>
-          </div>
-        </div>
-        <div class="c-right">
-          <a class="btn_buy" onclick="cart.toJieSuan()">去结算</a>
-        </div>
-      </div>
     </ul>
-    <div class="clear">
-    </div>
   </div>
   <div class="cart-info">
     <div class="c-left">
       <div class="c-price">
         <div class="cnt">
-          <span class="em">共计 <span class="im"><span id="LblMoneyGoods">¥ 176.00</span></span></span>
+          <span class="em">共计 <span class="im"><span id="LblMoneyGoods">￥{{amount}}</span></span></span>
           <span class="em">满<span class="im num">38</span>免运费</span>
         </div>
         <div class="cn">

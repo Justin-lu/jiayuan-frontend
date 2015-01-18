@@ -67,7 +67,7 @@ webApp.config(['$routeProvider', function ($routeProvider) {
     controller  : 'categoryController'
   })
 
-  .when('/cart', {
+  .when('/cart/:uid', {
     templateUrl : 'templates/cart.html',
     controller  : 'cartController'
   })

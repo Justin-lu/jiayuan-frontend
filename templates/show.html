@@ -94,14 +94,7 @@
     <img style="width: 100%;" src={{image}}>
   </div>
 
-<!--   <div class="btn-wrapper">
-    <a class="btn buy-btn btn-block btn-larger btn-strong" href="http://i.meituan.com/deal/buy/26878222" data-stid="360408083020086528_c0_e7f984116f92b91b289c55cf2c931d45d_b2" gaevent="imt/deal/buyBtn">立即购买</a>
-  </div>
-  <div id="recommand"></div>
- -->
  </div>
-<!-- <div id="J_canBuy" data-canbuy="1" style="display: none"></div> -->
-
 
 <div class="show-cart-info">
   <div class="c-back">
@@ -109,10 +102,10 @@
   </div>
   <div class="c-left">
     <div class="c-price">
-      <span class="em"><span id="lblPriceText">价格</span>：<span class="im">¥8.80</span></span>
+      <span class="em"><span id="lblPriceText">价格</span>：<span class="im">￥{{goodData.nowprice}}</span></span>
     </div>
   </div>
   <div class="c-right">
-    <a href="javascript:;" class="btn_buy" onclick="cart.addCartCom(1182,1)">加入购物车</a>
+    <a href="javascript:;" class="btn_buy" ng-click="addToCart()">加入购物车</a>
   </div>
 </div>
