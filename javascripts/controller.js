@@ -7,19 +7,14 @@ var webApp = angular.module('webAppControllers', []);
 
 //mainController
 webApp.controller('homeController', function($scope) {
-  // create a message to display in our view
-  $scope.message = 'home page!';
-  $(".nav-header").text("首页");
-
   $(".home").addClass('active').siblings().removeClass('active');
   $(".loading-mask").hide();
-
+  $('.navbar').show();
 });
 
 //showController
 webApp.controller('showController', ['$scope', '$routeParams', '$http', '$sce', function($scope, $routeParams, $http, $sce) {
   $(".loading-mask").show();
-  $(".nav-header").text("团购详情");
   $('.navbar').hide();
 
   var url = Helper.apiUrl("/goods/" + $routeParams.id)
@@ -33,33 +28,44 @@ webApp.controller('showController', ['$scope', '$routeParams', '$http', '$sce', 
 }]);
 
 // category
-webApp.controller('categoryController', function($scope) {
-  $(".nav-header").text("分类列表");
+webApp.controller('categoryController', ['$scope', '$http', function($scope, $http) {
   $(".category").addClass('active').siblings().removeClass('active');
   var height = $(window).height() - 52 - 45 + 'px';
   $('#left_sroll, #right_sroll').css('height', height);
 
-  var leftSroll = new IScroll('#left_sroll', {
-    tap: true,
-    mouseWheel: true,
-    click: true,
-    bounceEasing: 'elastic',
-    bounceTime: 1200
-  });
-  var rightSroll = new IScroll('#right_sroll', {
-    mouseWheel: true,
-    click: true
-  });
+  // http://115.28.145.57:3388/api/v1.0//categorys/000
+  var url = Helper.apiUrl("/categorys/000")
+  $http({
+    method: 'GET',
+    url: url
+  }).success(function(data, status, headers, config) {
+    $scope.rootCategories = data.data
+  }).error(function(data, status, headers, config) {});
 
-  $('#left_sroll ul li').on('tap', function() {
-    $(this).addClass('cur').siblings().removeClass('cur');
-    leftSroll.scrollToElement(this);
-    // filter right_scroll;
-  });
+  $scope.$on('ngRepeatFinished', function(){
+    $scope.leftSroll = new IScroll('#left_sroll', {
+      tap: true,
+      mouseWheel: true,
+      click: true,
+      bounceEasing: 'elastic',
+      bounceTime: 1200
+    });
+    var rightSroll = new IScroll('#right_sroll', {
+      mouseWheel: true,
+      click: true
+    });
+  })
+
+  $scope.showChildCategory = function(event){
+    $(event.target).addClass('cur').siblings().removeClass('cur');
+    $scope.leftSroll.scrollToElement(event.target);
+    // $scope.rootCategories.pop()
+    // $scope.$apply()
+  }
 
   $('.navbar').show();
   $(".loading-mask").hide();
-});
+}]);
 
 // cart
 webApp.controller('cartController', function($scope) {
@@ -92,8 +98,8 @@ webApp.controller('infoController', function($scope){
 })
 
 webApp.controller('homeSlideCtrl', ['$scope', '$http', function($scope, $http) {
-  // http://115.28.145.57:3388/api/v1.0/ad
-  var url = Helper.apiUrl("/ad")
+  // http://115.28.145.57:3388/api/v1.0/ads
+  var url = Helper.apiUrl("/ads")
   $http({
     method: 'GET',
     url: url

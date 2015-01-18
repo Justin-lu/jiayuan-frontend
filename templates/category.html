@@ -13,22 +13,8 @@
 <div class="wx_wrap">
   <div id="left_sroll" class='scroll'>
     <ul class="category1" id="allcontent">
-      <li class="">家用电器</li>
-      <li class="">手机</li>
-      <li class="">电脑数码</li>
-      <li class="">女装内衣</li>
-      <li class="">品牌男装</li>
-      <li class="">热销鞋靴</li>
-      <li class="">家居百货</li>
-      <li class="cur">箱包礼品</li>
-      <li class="">饰品手表</li>
-      <li class="">奢侈品</li>
-      <li class="">个护化妆</li>
-      <li class="">户外运动</li>
-      <li class="">汽车用品</li>
-      <li class="">食品生鲜</li>
-      <li class="">母婴玩具</li>
-      <li class="">图书音像</li>
+      <li init-slider ng-repeat='category in rootCategories' data-cid="{{category.cid}}" ng-click="showChildCategory($event)">{{category.name}}</li>
+      <!-- <li init-slider ng-repeat='category in rootCategories' data-cid="{{category.cid}}">{{category.name}}</li> -->
     </ul>
   </div>
   <div id="right_sroll" class='scroll'>
