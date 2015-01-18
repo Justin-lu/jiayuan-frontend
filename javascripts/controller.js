@@ -92,11 +92,17 @@ webApp.controller('infoController', function($scope){
 })
 
 webApp.controller('homeSlideCtrl', ['$scope', '$http', function($scope, $http) {
+  // http://115.28.145.57:3388/api/v1.0/ad
+  var url = Helper.apiUrl("/ad")
   $http({
     method: 'GET',
-    url: 'data/slide.json'
+    url: url
   }).success(function(data, status, headers, config) {
-    $scope.slides = data;
+    $scope.slides = data.data.map(function(item){
+      item.url = Helper.urlWithRoot(item.maximage);
+      item.link = Helper.getUrlWithId(item.goodid);
+      return item;
+    })
     // init slider picture
     $scope.$on('ngRepeatFinished', function(){
       var mySwiper = $('.swiper-container').swiper({

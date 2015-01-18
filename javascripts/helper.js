@@ -8,5 +8,9 @@ var Helper = {
 
   apiUrl: function(url){
     return this.root + "api/"  + this.version + url;
+  },
+
+  getUrlWithId: function(id) {
+    return "/#/show/" + id;
   }
 }
