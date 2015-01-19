@@ -78,19 +78,26 @@ webApp.controller('categoryController', ['$scope', '$http', function($scope, $ht
 webApp.controller('cartController', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http) {
   var url = Helper.apiUrl("/cart/" + $routeParams.uid)
   $http.get(url).success(function(data) {
-    $scope.cartItems = data.data.map(function(item){
+    var vm = $scope.vm = {};
+    vm.cartItems = data.data.map(function(item){
       item.url = Helper.urlWithRoot(item.maximage);
       return item;
     });
-    $scope.amount = data.amount;
+    vm.totalPrice = function(){
+      var amount = 0;
+      vm.cartItems.forEach(function(item){
+        amount += item.quantity * item.nowprice
+      });
+      return amount
+    }
 
     // should syn to remote data;
-    $scope.add = function(index){
-      $scope.cartItems[index].quantity += 1;
+    vm.add = function(index){
+      vm.cartItems[index].quantity += 1;
     };
-    $scope.decrease = function(index){
-      if ($scope.cartItems[index].quantity > 1){
-        $scope.cartItems[index].quantity -= 1;
+    vm.decrease = function(index){
+      if (vm.cartItems[index].quantity > 1){
+        vm.cartItems[index].quantity -= 1;
       }
     };
     $(".loading-mask").hide();

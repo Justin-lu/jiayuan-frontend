@@ -1,23 +1,23 @@
 <div class="container">
   <div id="content" class="content">
     <ul id="cart-body" class="mytable-cart">
-      <li class="odd" ng-repeat='cartItem in cartItems'>
+      <li class="odd" ng-repeat='cartItem in vm.cartItems'>
         <ul>
           <li>
             <div class="pic">
-              <a><img class="thu" src="{{cartItem.url}}"></a>
+              <a><img class="thu" ng-src="{{cartItem.url}}"></a>
             </div>
             <div class="tlcon tl-only">
               <div class="it name">{{cartItem.title}}</div>
               <div class="it num">
-                {{cartItem.nowprice}} * {{cartItem.quantity}} = {{cartItem.quantity * cartItem.nowprice}}
+                {{cartItem.nowprice}} * {{cartItem.quantity}} = {{cartItem.quantity * cartItem.nowprice |number:2}}
               </div>
               <div class="it ac">
                 <div class="pro-buy-left">
                   <div class="acnum pro-num" id="cart_num360527">
-                    <a class="pro-num-btn" href="javascript:;" ng-click="decrease($index)">-</a>
+                    <a class="pro-num-btn" href="javascript:;" ng-click="vm.decrease($index)">-</a>
                     <input type="text" class="pro-num-val" id="pro-num-val" maxlength="4" readonly="readonly" ng-model='cartItem.quantity'>
-                    <a class="pro-num-btn" href="javascript:;" ng-click="add($index)">+</a>
+                    <a class="pro-num-btn" href="javascript:;" ng-click="vm.add($index)">+</a>
                   </div>
                 </div>
                 <div class="btn_cancle">取消</div>
@@ -33,11 +33,11 @@
     <div class="c-left">
       <div class="c-price">
         <div class="cnt">
-          <span class="em">共计 <span class="im"><span id="LblMoneyGoods">￥{{amount}}</span></span></span>
-          <span class="em">满<span class="im num">38</span>免运费</span>
+          <span class="em">共计 <span class="im"><span id="LblMoneyGoods">￥{{vm.totalPrice() | number:2}}</span></span></span>
+          <span class="em">满<span class="im num">38.00</span>免运费</span>
         </div>
         <div class="cn">
-          <span id="LblChaMoney">自提免运费，已满<span class="im">38</span>元，免运费</span>
+          <span id="LblChaMoney">自提免运费，已满<span class="im">38.00</span>元，免运费</span>
         </div>
       </div>
     </div>
