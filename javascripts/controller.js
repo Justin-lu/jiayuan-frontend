@@ -100,6 +100,20 @@ webApp.controller('cartController', ['$scope', '$routeParams', '$http', function
         vm.cartItems[index].quantity -= 1;
       }
     };
+
+    vm.removeGoodFromCart = function(cartItem){
+      // http://APP_PATH/api/[version]/cart/ <int:uid>/ goods/<int:goodid>
+      var url = Helper.apiUrl("/cart/" + Helper.getUId() + "/goods/" + cartItem.goodid);
+      $http({
+        method: 'DELETE',
+        url: url
+      }).success(function(data, status, headers, config) {
+        vm.cartItems = $.grep(vm.cartItems, function(item){
+          return item.goodid != cartItem.goodid;
+        })
+        // $scope.$apply();
+      }).error(function(data, status, headers, config) {});
+    }
     $(".loading-mask").hide();
   })
 
