@@ -103,7 +103,7 @@ webApp.controller('cartController', ['$scope', '$routeParams', '$http', function
 
     vm.removeGoodFromCart = function(cartItem){
       // http://APP_PATH/api/[version]/cart/ <int:uid>/ goods/<int:goodid>
-      var url = Helper.apiUrl("/cart/" + Helper.getUId() + "/goods/" + cartItem.goodid);
+      var url = Helper.apiUrl("/cart/" + Helper.getUId() + "/goods/" + cartItem.goodid + "?quantity=" + cartItem.quantity);
       $http({
         method: 'DELETE',
         url: url
